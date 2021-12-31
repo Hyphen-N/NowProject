@@ -2,22 +2,22 @@
     <sysevent_register action="INSERT_OR_UPDATE">
         <caller_access/>
         <description>Register this event for the future script action, parm1 provides module name and id, parm2 provides </description>
-        <event_name>module.key.registry</event_name>
+        <event_name>x_snc_wind_turbine.WTEM</event_name>
         <fired_by>KMF module key registry</fired_by>
         <queue/>
-        <suffix/>
+        <suffix>WTEM</suffix>
         <sys_class_name>sysevent_register</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-12-31 09:15:22</sys_created_on>
         <sys_id>b8897c854d788110f8777644af11d276</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>module.key.registry</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_wind_turbine.WTEM</sys_name>
         <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
         <sys_update_name>sysevent_register_b8897c854d788110f8777644af11d276</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-12-31 09:15:22</sys_updated_on>
+        <sys_updated_on>2021-12-31 09:17:27</sys_updated_on>
         <table/>
     </sysevent_register>
 </record_update>
