@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Generator" language="en" table="x_snc_wind_turbine_generator">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Generator</label>
+            <language>en</language>
+            <name>x_snc_wind_turbine_generator</name>
+            <plural>Generators</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-02 11:08:42</sys_created_on>
+            <sys_id>7ca6e7a934784110f8778988784b58e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Generator</sys_name>
+            <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_wind_turbine_generator__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-02 11:08:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
