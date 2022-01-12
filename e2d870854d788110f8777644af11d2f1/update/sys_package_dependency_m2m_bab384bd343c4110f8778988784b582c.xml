@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="CMDB CI Class Models" source="sn_cmdb_ci_class">ae99d84b2320330006c0110d96bf65b3</dependency>
+        <min_version>1.33.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 13:15:49</sys_created_on>
+        <sys_id>bab384bd343c4110f8778988784b582c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 13:15:49</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

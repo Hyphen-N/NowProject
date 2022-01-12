@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_identifier">
+    <cmdb_identifier action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_to>x_snc_wind_turbine_cmdb_ci_substation</applies_to>
+        <description/>
+        <independent>true</independent>
+        <name>substation rule</name>
+        <sys_class_name>cmdb_identifier</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-03 22:59:28</sys_created_on>
+        <sys_id>cee25b863430c110f8778988784b58b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine_cmdb_ci_substation</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>cmdb_identifier_cee25b863430c110f8778988784b58b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-03 22:59:28</sys_updated_on>
+    </cmdb_identifier>
+</record_update>

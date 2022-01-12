@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Generator</name>
+        <order>100</order>
+        <roles>x_snc_wind_turbine.generator_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 11:08:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>20a6e7a934784110f8778988784b58a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_app_application_20a6e7a934784110f8778988784b58a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 11:08:42</sys_updated_on>
+        <title>Generator</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>5c080d8c7c300110157b5f16afb912bc</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_app_application_20a6e7a934784110f8778988784b58a6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Generator</name><order>100</order><roles>x_snc_wind_turbine.generator_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-02 11:08:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>20a6e7a934784110f8778988784b58a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Generator</sys_name><sys_overrides/><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_app_application_20a6e7a934784110f8778988784b58a6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-02 11:08:42</sys_updated_on><title>Generator</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-46919010</payload_hash>
+        <record_name>Generator</record_name>
+        <reverted_from/>
+        <source>0b99b4854d788110f8777644af11d2aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 11:08:42</sys_created_on>
+        <sys_id>60a6e7a934784110f8778988784b58a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e1a7a2fce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 11:08:42</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>a8a6e7a90a78411046dc1dc02c5be7a7</update_guid>
+        <update_guid_history>a8a6e7a90a78411046dc1dc02c5be7a7:-46919010</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Generator">ad5ccc35347c4110f8778988784b58b3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 13:53:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>280563d768ac4f8a912eb197d83816a4</sys_id>
+        <sys_metadata>20a6e7a934784110f8778988784b58a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generator</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_app_application_20a6e7a934784110f8778988784b58a6</sys_update_name>
+        <sys_update_version display_value="sys_app_application_20a6e7a934784110f8778988784b58a6">60a6e7a934784110f8778988784b58a8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 13:53:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

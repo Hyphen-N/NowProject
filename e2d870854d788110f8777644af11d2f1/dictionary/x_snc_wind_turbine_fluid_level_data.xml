@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_snc_wind_turbine_sensor" label="Fluid Level Data" max_length="40" name="x_snc_wind_turbine_fluid_level_data" sizeclass="0" type="collection">
+        <element label="Fluid Level" max_length="20" name="fluid_level" type="decimal"/>
+    </element>
+</database>

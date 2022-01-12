@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_metadata_containment">
+    <cmdb_metadata_containment action="INSERT_OR_UPDATE">
+        <always_include>false</always_include>
+        <ci_type>x_snc_wind_turbine_gearbox</ci_type>
+        <is_reverse>false</is_reverse>
+        <parent_id/>
+        <rel_type/>
+        <sys_class_name>cmdb_metadata_containment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-04 00:09:46</sys_created_on>
+        <sys_id>73f2e3423470c110f8778988784b58de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine_gearbox</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>cmdb_metadata_containment_73f2e3423470c110f8778988784b58de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-04 00:09:46</sys_updated_on>
+    </cmdb_metadata_containment>
+</record_update>

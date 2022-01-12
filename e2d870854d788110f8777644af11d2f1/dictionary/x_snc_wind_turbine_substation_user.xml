@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Substation User" max_length="40" name="x_snc_wind_turbine_substation_user" sizeclass="2" type="collection">
+        <element choice="1" label="Role" max_length="40" name="role" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Substation Manager" value="1"/>
+            </choice>
+        </element>
+        <element label="Substation" max_length="32" name="substation" reference="x_snc_wind_turbine_cmdb_ci_substation" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="substation"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

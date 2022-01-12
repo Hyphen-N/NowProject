@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="297b01acd4cdc110f8775f31515f9af8" sys_domain="global" table="x_snc_wind_turbine_generator" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-11 07:32:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ed7b41acd4cdc110f8775f31515f9ab5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_wind_turbine_generator" name="x_snc_wind_turbine_generator" sys_domain="global" view="Default view">297b01acd4cdc110f8775f31515f9af8</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_wind_turbine_generator" sys_domain="global" view="Default view">3b1b496cd4cdc110f8775f31515f9a86</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-11 07:32:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-11 07:32:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad7b41acd4cdc110f8775f31515f9ab6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_wind_turbine_generator" name="x_snc_wind_turbine_generator" sys_domain="global" view="Default view">297b01acd4cdc110f8775f31515f9af8</sys_ui_form>
+            <sys_ui_section caption="CI Relations" display_value="CI Relations" name="x_snc_wind_turbine_generator" sys_domain="global" view="Default view">a57b01acd4cdc110f8775f31515f9af7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-11 07:32:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_wind_turbine_generator</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-11 07:32:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>297b01acd4cdc110f8775f31515f9af8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_wind_turbine_generator</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+            <sys_update_name>sys_ui_form_sections_297b01acd4cdc110f8775f31515f9af8</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-11 07:32:31</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_wind_turbine.WTWorkSpaceUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>WTWorkSpaceUtil</name>
+        <script><![CDATA[var WTWorkSpaceUtil = Class.create();
+WTWorkSpaceUtil.prototype = {
+    initialize: function() {},
+    getWindTurbines: function() {
+        var markers = [];
+        // Pull the wind Turbine Records
+        var windTurbs = new GlideRecord(WTScriptConstants.WIND_TURBINE_TABLE);
+        windTurbs.addQuery("locationISNOTEMPTY"); //Adding Condition
+        windTurbs.query(); // Pulling the data
+
+        //Pull the necessary data
+        while (windTurbs.next()) {
+            var sysId = windTurbs.getValue("sys_id");
+            var table = WTScriptConstants.WIND_TURBINE_TABLE;
+            var displayValue = windTurbs.getDisplayValue("name");
+            var type = WTScriptConstants.WIND_TURBINE_TYPE;
+            var fields = this._getWindTurbineFields();
+            var lat = this._parseFloatForCoords(windTurbs.getElement("location.latitude"));
+            var lng = this._parseFloatForCoords(windTurbs.getElement("location.longitude"));
+            var WindTurbineImages = {
+                'defaultIcon': 'marker-techs-single.svg',
+                'highlightedIcon': 'marker-techs-single-on-focus.svg'
+            };
+            var multipleIncidentImages = {
+                'defaultIcon': 'marker-agents-plus-tasks-colocated.svg',
+                'highlightedIcon': 'marker-agents-plus-tasks-colocated-on-focus.svg'
+            };
+
+            var incidentImages = {
+                'defaultIcon': 'marker-tasks-single-pending-dispatch.svg',
+                'highlightedIcon': 'marker-tasks-single-pending-dispatch-on-focus.svg'
+            };
+            var marker = this._addWindTurbineMarker(sysId, table, displayValue, type, fields, lat, lng, WindTurbineImages);
+
+            var wtIndc = new GlideRecord(WTScriptConstants.INCIDENT_TABLE);
+            wtIndc.addQuery("cmdb_ci.sys_id", sysId);
+            wtIndc.query();
+            var count = 0;
+            while (wtIndc.next()) {
+                count++;
+                sysId = wtIndc.getValue("sys_id");
+                table = WTScriptConstants.WIND_TURBINE_TABLE;
+                displayValue = wtIndc.getValue("number");
+                type = WTScriptConstants.WIND_TURBINE_INCID_TYPE;
+                fields = this._getWindTurbineIncidentFields();
+                var incMarker = this._addIncident(sysId, table, displayValue, type, fields, incidentImages);
+                marker["items"].push(incMarker);
+            }
+            if (count > 1) {
+                marker['image'] = multipleIncidentImages.defaultIcon;
+                marker['highlightedIcon'] = multipleIncidentImages.highlightedIcon;
+            }
+            markers.push(marker);
+        }
+        return markers;
+    },
+    _addWindTurbineMarker: function(sysId, table, displayValue, type, fields, lat, lng, images, newly_assigned) {
+        return {
+            'items': [{
+                'sys_id': sysId,
+                'table': table,
+                'displayValue': displayValue,
+                'type': type,
+                'fields': fields,
+                'image': images['defaultIcon'],
+                'highlightedIcon': images['highlightedIcon'],
+                'newly_assigned': newly_assigned
+            }],
+            'lng': lng,
+            'lat': lat,
+            'image': images['defaultIcon'],
+            'highlightedIcon': images['highlightedIcon']
+
+        };
+    },
+    _addIncident: function(sysId, table, displayValue, type, fields, images) {
+        return {
+            'sys_id': sysId,
+            'table': table,
+            'displayValue': displayValue,
+            'type': type,
+            'fields': fields,
+            'image': images['defaultIcon'],
+            'highlightedIcon': images['highlightedIcon']
+        };
+    },
+
+    _getWindTurbineFields: function() {
+        return 'name { label value displayValue} \
+				code {lable value displayValue} \
+				serial_number {label value displayValue} \
+				model_number {label value displayValue}';
+    },
+    _getWindTurbineIncidentFields: function() {
+        return 'short_description { label value displayValue } \
+				number { label value displayValue }';
+    },
+    _parseFloatForCoords: function(value) {
+
+        try {
+            return parseFloat(value);
+        } catch (err) {
+            return null;
+        }
+    },
+    type: 'WTWorkSpaceUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 08:40:50</sys_created_on>
+        <sys_id>050be73634304510f8778988784b58a8</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>WTWorkSpaceUtil</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_script_include_050be73634304510f8778988784b58a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 05:30:15</sys_updated_on>
+    </sys_script_include>
+</record_update>

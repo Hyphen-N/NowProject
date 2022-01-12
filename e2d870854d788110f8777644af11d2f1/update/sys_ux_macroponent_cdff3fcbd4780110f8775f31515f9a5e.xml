@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "container_1",
+  "elementLabel" : "Container 1",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "container_2",
+      "elementLabel" : "Container 2",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Column 1",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 3","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "root" : null,
+            "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+            "styles" : null,
+            "templateId" : "4105f10153071010e6bcddeeff7b121e",
+            "type" : "flex"
+          },
+          "version" : "2.0.0"
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    }, {
+      "elementId" : "field_service_google_map_1",
+      "elementLabel" : "Field service Google map 1",
+      "propertyValues" : {
+        "mapSettings" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "maxAutoZoomLevel" : 7,
+            "initialZoom" : 7,
+            "mapOptions" : {
+              "styles" : "",
+              "mapTypeId" : "roadmap",
+              "streetViewControl" : true,
+              "routeType" : "street_level",
+              "icons" : {
+                "colocated" : "marker-agents-plus-tasks-colocated.svg",
+                "colocatedFocus" : "marker-agents-plus-tasks-colocated-on-focus.svg",
+                "pending" : "marker-tasks-single-pending-dispatch.svg",
+                "pendingFocus" : "marker-tasks-single-pending-dispatch-on-focus.svg"
+              },
+              "routeMarkers" : {
+                "#BE00A5" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-magenta.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-magenta.svg"
+                },
+                "#6B8391" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-gray.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-gray.svg"
+                },
+                "#51A500" : {
+                  "incident" : "marker-route-destination-green.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-green.svg"
+                },
+                "#0006D0" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-navy.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-navy.svg"
+                },
+                "#AF8600" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-yellow.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-yellow.svg"
+                },
+                "#C42900" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-orange.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-orange.svg"
+                },
+                "#009F85" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-teal.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-teal.svg"
+                },
+                "#008DD5" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-blue.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-blue.svg"
+                },
+                "#6F00E3" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-purple.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-purple.svg"
+                },
+                "#83AD00" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-gy.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-gy.svg"
+                },
+                "#D20039" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-sapphire.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-pink.svg"
+                },
+                "onFocus" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-on-focus.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-techs-single-on-focus.svg"
+                }
+              }
+            }
+          }
+        },
+        "googleKey" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "method" : "key",
+            "key" : "AIzaSyAPralFoubG9Ir3rGiLtbJabI0A831H320",
+            "client" : "gme-servicenow"
+          }
+        },
+        "selectedRecordId" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "mapDisplaySettings" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "maxAutoZoomLevel" : 7,
+            "initialZoom" : 7,
+            "mapOptions" : {
+              "styles" : "",
+              "mapTypeId" : "roadmap",
+              "streetViewControl" : true,
+              "routeType" : "street_level",
+              "icons" : {
+                "colocated" : "marker-agents-plus-tasks-colocated.svg",
+                "colocatedFocus" : "marker-agents-plus-tasks-colocated-on-focus.svg",
+                "pending" : "marker-tasks-single-pending-dispatch.svg",
+                "pendingFocus" : "marker-tasks-single-pending-dispatch-on-focus.svg"
+              },
+              "routeMarkers" : {
+                "#BE00A5" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-magenta.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-magenta.svg"
+                },
+                "#6B8391" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-gray.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-gray.svg"
+                },
+                "#51A500" : {
+                  "incident" : "marker-route-destination-green.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-green.svg"
+                },
+                "#0006D0" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-navy.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-navy.svg"
+                },
+                "#AF8600" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-yellow.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-yellow.svg"
+                },
+                "#C42900" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-orange.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-orange.svg"
+                },
+                "#009F85" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-teal.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-teal.svg"
+                },
+                "#008DD5" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-blue.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-blue.svg"
+                },
+                "#6F00E3" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-purple.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-purple.svg"
+                },
+                "#83AD00" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-gy.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-gy.svg"
+                },
+                "#D20039" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-sapphire.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-pink.svg"
+                },
+                "onFocus" : {
+                  "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-on-focus.svg",
+                  "x_snc_wind_turbine_wind_turbine" : "marker-techs-single-on-focus.svg"
+                }
+              }
+            }
+          }
+        },
+        "mapMarkers" : {
+          "type" : "JSON_LITERAL",
+          "value" : [ {
+            "items" : [ {
+              "sys_id" : "4b6ccea234b00510f8778988784b5813",
+              "table" : "x_snc_wind_turbine_wind_turbine",
+              "displayValue" : "Texas-WT1",
+              "type" : "Wind Turbine",
+              "fields" : "name { label value displayValue} \t\t\t\tcode {lable value displayValue} \t\t\t\tserial_number {label value displayValue} \t\t\t\tmodel_number {label value displayValue}",
+              "image" : "marker-techs-single.svg",
+              "highlightedIcon" : "marker-techs-single-on-focus.svg",
+              "newly_assigned" : null
+            }, {
+              "sys_id" : "55cdc483d4300110f8775f31515f9ada",
+              "table" : "x_snc_wind_turbine_wind_turbine",
+              "displayValue" : "WIN0001001",
+              "type" : "Wind Turbine Incident",
+              "fields" : "short_description { label value displayValue } \t\t\t\tnumber { label value displayValue }",
+              "image" : "marker-tasks-single-pending-dispatch.svg",
+              "highlightedIcon" : "marker-tasks-single-pending-dispatch-on-focus.svg"
+            } ],
+            "lng" : -96.803514,
+            "lat" : 33.108618,
+            "image" : "marker-techs-single.svg",
+            "highlightedIcon" : "marker-techs-single-on-focus.svg"
+          } ]
+        },
+        "routeMarkers" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "activeRoutes" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Column 2",
+      "definition" : {
+        "id" : "97ee7fccf2d75f616fbd491bc81484ef",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "CLIENT_TRANSFORM_SCRIPT",
+        "script" : {
+          "apiVersion" : "1.0.0",
+          "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\treturn false;\n}"
+        }
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "height" : "calc(100vh - 15rem)"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+        "styles" : null,
+        "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+        "type" : "flex"
+      },
+      "version" : "2.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "236583fa34bc0510f8778988784b586d",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "get_wind_turbine_google_map_settings_1",
+  "elementLabel" : "Get Wind Turbine Google Map Settings 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "c38763b234304510f8778988784b5841",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "get_wind_turbine_markers_1",
+  "elementLabel" : "Get Wind Turbine Markers 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <dispatched_events/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"400px","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "flex"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Landing Page</name>
+        <props>[ ]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 04:50:13</sys_created_on>
+        <sys_id>cdff3fcbd4780110f8775f31515f9a5e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Landing Page</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ux_macroponent_cdff3fcbd4780110f8775f31515f9a5e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 06:01:01</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

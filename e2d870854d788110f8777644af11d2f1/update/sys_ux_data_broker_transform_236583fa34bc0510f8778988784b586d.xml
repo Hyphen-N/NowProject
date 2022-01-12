@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_wind_turbine.Get Wind Turbine Google Map Settings</api_name>
+        <description>Wind Turbine Google Maps settings to display the Wind Tubine locations and Incidents</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get Wind Turbine Google Map Settings</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input){
+	var response = {};
+	//Getting the HideMap property information
+	response["hideMap"] = (gs.getProperty("sn_fsm_disp_wrkspc.dispatcher_workspace.hide_map") === "true");
+	response["hideMapOnAssignment"] = ((gs.getProperty("sn_fsm_disp_wrkspc.display_map_on_assignment_confirmation") === "false") ||  response["hideMap"] === "true");
+	
+	if(!response["hideMap"]){
+		response["google"] = {};
+		var method = gs.getProperty('google.maps.method');
+		var key = gs.getProperty('google.maps.key');
+		var client = gs.getProperty('google.maps.client');
+		
+		if(method == 'client-id'){
+			response["google"]["method"] = "client-id";
+		}else{
+			response["google"]["method"] = "key";
+		}
+		response["google"]["key"] = key;
+		response["google"]["client"] = client;
+		
+		response["settings"] = {};
+		var stylesStr = gs.getProperty("sn_fsm_disp_wrkspc.sn_fsm.dispatch_ws_map.map_style");
+		var mapOptions = {};
+		mapOptions["styles"] = gs.nil(stylesStr) ? "" : stylesStr;
+		mapOptions["mapTypeId"] = gs.getProperty("sn_fsm_disp_wrkspc.sn_fsm.dispatch_ws_map.map_type");
+        mapOptions["streetViewControl"] = gs.getProperty("sn_fsm_disp_wrkspc.sn_fsm.dispatch_ws_map.street_view_enabled") == "true";
+		mapOptions["routeType"]=gs.getProperty("sn_fsm_disp_wrkspc.sn_fsm.dispatch_ws_map.route_type");
+        mapOptions["icons"] = {
+			"colocated": "marker-agents-plus-tasks-colocated.svg",
+			"colocatedFocus": "marker-agents-plus-tasks-colocated-on-focus.svg",
+			"pending": "marker-tasks-single-pending-dispatch.svg",
+			"pendingFocus": "marker-tasks-single-pending-dispatch-on-focus.svg"
+        };
+		
+		mapOptions["routeMarkers"] = {
+			"#BE00A5": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-magenta.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-magenta.svg"}, 
+			"#6B8391": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-gray.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-gray.svg"},
+			"#51A500": {"incident" : "marker-route-destination-green.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-green.svg"},
+			"#0006D0": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-navy.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-navy.svg"},
+			"#AF8600": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-yellow.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-yellow.svg"},
+			"#C42900": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-orange.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-orange.svg"},
+			"#009F85": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-teal.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-teal.svg"},
+			"#008DD5": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-blue.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-blue.svg"},
+			"#6F00E3": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-purple.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-purple.svg"},
+			"#83AD00": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-gy.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-gy.svg"},
+			"#D20039": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-sapphire.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-pink.svg"},
+			"onFocus": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-on-focus.svg", "x_snc_wind_turbine_wind_turbine" : "marker-techs-single-on-focus.svg"}
+        };
+		
+		response["settings"]["maxAutoZoomLevel"] = parseInt(gs.getProperty("sn_fsm_disp_wrkspc.sn_fsm.dispatch_ws_map.maximum_auto_zoom_level"));
+		response["settings"]["initialZoom"] = parseInt(gs.getProperty("sn_fsm_disp_wrkspc.sn_fsm.dispatch_ws_map.initial_zoom_level"));
+        response["settings"]["mapOptions"] = mapOptions;
+		
+	}
+
+	return response;
+	
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 05:57:25</sys_created_on>
+        <sys_id>236583fa34bc0510f8778988784b586d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Get Wind Turbine Google Map Settings</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_236583fa34bc0510f8778988784b586d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 05:03:05</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=236583fa34bc0510f8778988784b586d"/>
+</record_update>

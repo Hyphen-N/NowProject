@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="cmdb_ci_hardware" label="Field Device" max_length="40" name="x_snc_wind_turbine_cmdb_ci_field_device" sizeclass="0" type="collection">
+    <element extends="cmdb_ci_hardware" label="Field Device" max_length="40" name="x_snc_wind_turbine_cmdb_ci_field_device" sizeclass="16" type="collection">
         <element display="true" label="Code" mandatory="true" max_length="5" name="code" type="string"/>
+        <element label="Wind Turbine" max_length="32" name="wind_turbine" reference="x_snc_wind_turbine_cmdb_ci_field_device" type="reference"/>
     </element>
 </database>

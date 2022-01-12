@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="DELETE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_snc_wind_turbine_cmdb_ci_substation</basic_apply_to>
+        <basic_query_from>x_snc_wind_turbine_substation_user</basic_query_from>
+        <insert_callback/>
+        <name>SubstationUsers</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	current.addQuery('substation', parent.sys_id);
+	current.orderByDesc("sys_created_on");
+
+})(current, parent);]]></query_with>
+        <reference_field>substation</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 10:51:55</sys_created_on>
+        <sys_id>54225d93d47c0110f8775f31515f9a35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SubstationUsers</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_relationship_54225d93d47c0110f8775f31515f9a35</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 10:51:55</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="DELETE" query="documentkey=54225d93d47c0110f8775f31515f9a35"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>5c080d8c7c300110157b5f16afb912bc</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_relationship_54225d93d47c0110f8775f31515f9a35</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;x_snc_wind_turbine_cmdb_ci_substation&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;x_snc_wind_turbine_substation_user&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;SubstationUsers&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
+
+	current.addQuery('substation', parent.sys_id);
+	current.orderByDesc("sys_created_on");
+
+})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;substation&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-01-07 10:51:55&lt;/sys_created_on&gt;&lt;sys_id&gt;54225d93d47c0110f8775f31515f9a35&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;SubstationUsers&lt;/sys_name&gt;&lt;sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine"&gt;e2d870854d788110f8777644af11d2f1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Wind Turbine Equipment Management"&gt;e2d870854d788110f8777644af11d2f1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_54225d93d47c0110f8775f31515f9a35&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-01-07 10:51:55&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=54225d93d47c0110f8775f31515f9a35"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1051238136</payload_hash>
+        <record_name>SubstationUsers</record_name>
+        <reverted_from/>
+        <source>2ef2c47d343c4110f8778988784b583d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 10:51:55</sys_created_on>
+        <sys_id>afb21193d47c0110f8775f31515f9aa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e342a9f080000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 10:51:55</sys_updated_on>
+        <type>Relationship</type>
+        <update_guid>e7b21193397c01109334af6a7dd674a5</update_guid>
+        <update_guid_history>e7b21193397c01109334af6a7dd674a5:-1051238136</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 10:53:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_relationship">sys_relationship</sys_db_object>
+        <sys_id>ae536c0026354cd88c69cff76d4ee510</sys_id>
+        <sys_metadata>54225d93d47c0110f8775f31515f9a35</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SubstationUsers</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent display_value="substation">293d5b6134784110f8778988784b583a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_relationship_54225d93d47c0110f8775f31515f9a35</sys_update_name>
+        <sys_update_version display_value="sys_relationship_54225d93d47c0110f8775f31515f9a35">afb21193d47c0110f8775f31515f9aa5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 10:53:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

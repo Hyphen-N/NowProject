@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Playground UX Configuration">e69f3bcbd4780110f8775f31515f9a83</app_config>
+        <description/>
+        <fields/>
+        <icon/>
+        <name>IncidentRecord</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>incidentrecord</route_type>
+        <screen_type display_value="IncidentRecord">c2a1d01bd4b80110f8775f31515f9acc</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 06:07:34</sys_created_on>
+        <sys_id>caa1d01bd4b80110f8775f31515f9af2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IncidentRecord</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ux_app_route_caa1d01bd4b80110f8775f31515f9af2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 06:07:34</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=caa1d01bd4b80110f8775f31515f9af2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>5c080d8c7c300110157b5f16afb912bc</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_ux_app_route_caa1d01bd4b80110f8775f31515f9af2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Playground UX Configuration">e69f3bcbd4780110f8775f31515f9a83</app_config><description/><fields/><icon/><name>IncidentRecord</name><optional_parameters/><order>0</order><parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>incidentrecord</route_type><screen_type display_value="IncidentRecord">c2a1d01bd4b80110f8775f31515f9acc</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-07 06:07:34</sys_created_on><sys_id>caa1d01bd4b80110f8775f31515f9af2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>IncidentRecord</sys_name><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_ux_app_route_caa1d01bd4b80110f8775f31515f9af2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-07 06:07:34</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=caa1d01bd4b80110f8775f31515f9af2"/></record_update>]]></payload>
+        <payload_hash>229892897</payload_hash>
+        <record_name>IncidentRecord</record_name>
+        <reverted_from/>
+        <source>2ef2c47d343c4110f8778988784b583d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 06:07:34</sys_created_on>
+        <sys_id>42a1d01bd4b80110f8775f31515f9af5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e33264a830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 06:07:34</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>8aa1d01b0fb8011012b48345498d2bf4</update_guid>
+        <update_guid_history>8aa1d01b0fb8011012b48345498d2bf4:229892897</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>abel.tuter</sys_created_by>
+        <sys_created_on>2022-01-07 06:39:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>acaadd07de744a83b5f2a2e6de7866c9</sys_id>
+        <sys_metadata>caa1d01bd4b80110f8775f31515f9af2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IncidentRecord</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_caa1d01bd4b80110f8775f31515f9af2</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_caa1d01bd4b80110f8775f31515f9af2">42a1d01bd4b80110f8775f31515f9af5</sys_update_version>
+        <sys_updated_by>abel.tuter</sys_updated_by>
+        <sys_updated_on>2022-01-07 06:39:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

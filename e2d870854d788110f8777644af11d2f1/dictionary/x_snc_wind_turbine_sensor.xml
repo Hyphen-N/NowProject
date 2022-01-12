@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Sensor" max_length="40" name="x_snc_wind_turbine_sensor" sizeclass="0" type="collection">
+        <element label="SensorId" max_length="32" name="sensorid" reference="cmdb_ci" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Timeseries" max_length="40" name="timeseries" type="glide_date_time"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="sensorid"/>
+        </index>
+    </element>
+</database>
