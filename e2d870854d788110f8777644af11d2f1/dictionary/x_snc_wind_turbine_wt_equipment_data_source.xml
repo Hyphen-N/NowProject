@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Wind Turbine Data Source" max_length="40" name="x_snc_wind_turbine_wt_equipment_data_source" sizeclass="6" type="collection">
+    <element extends="sys_import_set_row" label="Wind Turbine Data Source" max_length="40" name="x_snc_wind_turbine_wt_equipment_data_source" sizeclass="12" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Code" label="GB Code" max_length="40" name="u_gb_code" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Manufacture" label="GB Manufacture" max_length="40" name="u_gb_manufacture" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Model" label="GB Model" max_length="40" name="u_gb_model" type="string"/>
@@ -22,6 +22,7 @@
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Sensor Typical Apps" label="Gen Sensor Typical Apps" max_length="40" name="u_gen_sensor_typical_apps" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Serial Number" label="Gen Serial Number" max_length="40" name="u_gen_serial_number" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Warranty  Expiration" label="Gen Warranty  Expiration" max_length="40" name="u_gen_warranty__expiration" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ï»¿Substation Serial Number" label="ï»¿Substation Serial Number" max_length="40" name="u_ï__substation_serial_number" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Code" label="LSS Code" max_length="40" name="u_lss_code" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Manufacture" label="LSS Manufacture" max_length="40" name="u_lss_manufacture" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Model" label="LSS Model" max_length="40" name="u_lss_model" type="string"/>

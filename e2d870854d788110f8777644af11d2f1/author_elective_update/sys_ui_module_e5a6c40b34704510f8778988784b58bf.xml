@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <filter/>
+        <name>Wind Turbine Incidents</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_wind_turbine.wind_turbine_incident_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 10:40:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5a6c40b34704510f8778988784b58bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Wind Turbine Incidents</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ui_module_e5a6c40b34704510f8778988784b58bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 10:40:59</sys_updated_on>
+        <table>x_snc_wind_turbine_wind_turbine_incident</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>85d829f41b854510e84d2f8dee4bcb5c</instance_id>
+        <instance_name>projectnow</instance_name>
+        <name>sys_ui_module_e5a6c40b34704510f8778988784b58bf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application/><filter/><name>Wind Turbine Incidents</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_snc_wind_turbine.wind_turbine_incident_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-06 10:40:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e5a6c40b34704510f8778988784b58bf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Wind Turbine Incidents</sys_name><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_ui_module_e5a6c40b34704510f8778988784b58bf</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-06 10:40:59</sys_updated_on><table>x_snc_wind_turbine_wind_turbine_incident</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>384029468</payload_hash>
+        <record_name>Wind Turbine Incidents</record_name>
+        <reverted_from/>
+        <source>df827e3c9785011085ae317c1253af5c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 06:27:53</sys_created_on>
+        <sys_id>82df0f81970d411085ae317c1253affa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e521f0a2f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 06:27:53</sys_updated_on>
+        <type>Module</type>
+        <update_guid>cedf0f81170d41101f82390dda7210f9</update_guid>
+        <update_guid_history>cedf0f81170d41101f82390dda7210f9:0,211baab468850110e79e092fefd4beb5:-1558937674</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 06:29:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>2cb918585ecc49a49f03ac68c153e390</sys_id>
+        <sys_metadata>e5a6c40b34704510f8778988784b58bf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Wind Turbine Incidents</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_ui_module_e5a6c40b34704510f8778988784b58bf</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_e5a6c40b34704510f8778988784b58bf">82df0f81970d411085ae317c1253affa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 06:29:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

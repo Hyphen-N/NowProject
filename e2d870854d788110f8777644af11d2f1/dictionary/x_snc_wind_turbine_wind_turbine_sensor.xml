@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="cmdb_ci_iot" label="Wind Turbine Sensor" max_length="40" name="x_snc_wind_turbine_wind_turbine_sensor" sizeclass="12" type="collection">
+    <element extends="cmdb_ci_hardware" label="Wind Turbine Sensor" max_length="40" name="x_snc_wind_turbine_wind_turbine_sensor" sizeclass="12" type="collection">
         <element label="Accuracy" max_length="32" name="accuracy" type="string"/>
         <element label="Field Device" max_length="32" name="field_device" reference="x_snc_wind_turbine_cmdb_ci_field_device" type="reference"/>
         <element label="Sensor Range" max_length="32" name="sensor_range" type="string"/>

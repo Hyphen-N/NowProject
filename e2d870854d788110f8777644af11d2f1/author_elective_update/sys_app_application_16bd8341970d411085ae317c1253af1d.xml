@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Accuracy</name>
+        <order>100</order>
+        <roles>x_snc_wind_turbine.wind_turbine_sensor_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 06:18:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>16bd8341970d411085ae317c1253af1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Accuracy</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_app_application_16bd8341970d411085ae317c1253af1d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 06:18:37</sys_updated_on>
+        <title>Accuracy</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>85d829f41b854510e84d2f8dee4bcb5c</instance_id>
+        <instance_name>projectnow</instance_name>
+        <name>sys_app_application_16bd8341970d411085ae317c1253af1d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Accuracy</name><order>100</order><roles>x_snc_wind_turbine.wind_turbine_sensor_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-13 06:18:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>16bd8341970d411085ae317c1253af1d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Accuracy</sys_name><sys_overrides/><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_app_application_16bd8341970d411085ae317c1253af1d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-13 06:18:37</sys_updated_on><title>Accuracy</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-80412990</payload_hash>
+        <record_name>Accuracy</record_name>
+        <reverted_from/>
+        <source>df827e3c9785011085ae317c1253af5c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 06:18:37</sys_created_on>
+        <sys_id>d6bd8341970d411085ae317c1253af20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e52168f3b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 06:18:37</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>12bd8341c20d4110dc7d53b7a856a020</update_guid>
+        <update_guid_history>12bd8341c20d4110dc7d53b7a856a020:-80412990</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Accuracy">f8af8b81970d411085ae317c1253af1e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 06:26:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>091cfd4dc3de4f34806ffe1c81120a09</sys_id>
+        <sys_metadata>16bd8341970d411085ae317c1253af1d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Accuracy</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_app_application_16bd8341970d411085ae317c1253af1d</sys_update_name>
+        <sys_update_version display_value="sys_app_application_16bd8341970d411085ae317c1253af1d">d6bd8341970d411085ae317c1253af20</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 06:26:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

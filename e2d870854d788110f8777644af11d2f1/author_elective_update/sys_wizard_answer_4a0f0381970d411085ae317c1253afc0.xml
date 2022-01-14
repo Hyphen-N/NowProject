@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Temperature Sensor</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Temperature Sensor</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Base Configuration Item" name="Base Configuration Item">20be56eea5300110c0a0e1db2cdc955b</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 06:24:19</sys_created_on>
+        <sys_id>4a0f0381970d411085ae317c1253afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Temperature Sensor</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_wizard_answer_4a0f0381970d411085ae317c1253afc0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 06:24:19</sys_updated_on>
+        <table/>
+        <target_url>x_snc_wind_turbine_temperature_sensor.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>85d829f41b854510e84d2f8dee4bcb5c</instance_id>
+        <instance_name>projectnow</instance_name>
+        <name>sys_wizard_answer_4a0f0381970d411085ae317c1253afc0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Temperature Sensor</answer><button_label/><dependent_value/><element/><name>Temperature Sensor</name><next_question/><order>100</order><payload_name/><question display_value="Base Configuration Item" name="Base Configuration Item">20be56eea5300110c0a0e1db2cdc955b</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-13 06:24:19</sys_created_on><sys_id>4a0f0381970d411085ae317c1253afc0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Temperature Sensor</sys_name><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_wizard_answer_4a0f0381970d411085ae317c1253afc0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-13 06:24:19</sys_updated_on><table/><target_url>x_snc_wind_turbine_temperature_sensor.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>-1141552389</payload_hash>
+        <record_name>Temperature Sensor</record_name>
+        <reverted_from/>
+        <source>a52c2d309701011085ae317c1253afc4</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-01-12 04:33:49</sys_created_on>
+        <sys_id>8bed9b0d970d411085ae317c1253af22</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>17e4c903fc80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Answer</type>
+        <update_guid>4bed9b0d630d4110a0aac71fc8db3222</update_guid>
+        <update_guid_history>4bed9b0d630d4110a0aac71fc8db3222:-1141552389</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 07:29:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>c3a7e1c171804bc686e01643b1150104</sys_id>
+        <sys_metadata>4a0f0381970d411085ae317c1253afc0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Temperature Sensor</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent display_value="Base Configuration Item">20be56eea5300110c0a0e1db2cdc955b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_4a0f0381970d411085ae317c1253afc0</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_4a0f0381970d411085ae317c1253afc0">8bed9b0d970d411085ae317c1253af22</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 07:29:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_rel_type_suggest">
     <cmdb_rel_type_suggest action="INSERT_OR_UPDATE">
-        <base_class>x_snc_wind_turbine_gearbox</base_class>
+        <base_class>x_snc_wind_turbine_fluid_sensor</base_class>
         <child>false</child>
-        <cmdb_rel_type display_value="Connects to::Connected by">5599a965c0a8010e00da3b58b113d70e</cmdb_rel_type>
-        <dependent_class>x_snc_wind_turbine_fluid_sensor</dependent_class>
+        <cmdb_rel_type display_value="Owns::Owned by">25242fb2377a9200738d021a54990e88</cmdb_rel_type>
+        <dependent_class>x_snc_wind_turbine_gearbox</dependent_class>
         <parent>true</parent>
-        <relationship>parent:5599a965c0a8010e00da3b58b113d70e</relationship>
+        <relationship>parent:25242fb2377a9200738d021a54990e88</relationship>
         <sys_class_name>cmdb_rel_type_suggest</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-04 00:28:14</sys_created_on>
         <sys_id>e63767823470c110f8778988784b5830</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_snc_wind_turbine_gearbox</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_wind_turbine_fluid_sensor</sys_name>
         <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
         <sys_update_name>cmdb_rel_type_suggest_e63767823470c110f8778988784b5830</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-04 00:28:14</sys_updated_on>
+        <sys_updated_on>2022-01-13 06:55:29</sys_updated_on>
     </cmdb_rel_type_suggest>
 </record_update>

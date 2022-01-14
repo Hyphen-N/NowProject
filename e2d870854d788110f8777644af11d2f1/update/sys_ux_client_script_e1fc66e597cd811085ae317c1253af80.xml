@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Home">aac137fc27c90110567bb9cb16709fee</macroponent>
+        <name>Chart Clicked</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+    const openList = function (table, query, listTitle) {
+        var redirectPayload = {
+            redirect: false,
+            route : 'simplelist',
+            fields: {
+                table: table
+            },
+            params: {
+                query: query,
+                listTitle: listTitle
+            },
+            title: listTitle,
+            targetRoute: 'current'
+    };
+
+       api.emit("NAV_ITEM_SELECTED", redirectPayload);
+   };
+
+   openList(event.payload.params.table, event.payload.params.query, event.payload.params.listTitle);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-14 17:12:26</sys_created_on>
+        <sys_id>e1fc66e597cd811085ae317c1253af80</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Chart Clicked</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ux_client_script_e1fc66e597cd811085ae317c1253af80</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-14 17:13:40</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

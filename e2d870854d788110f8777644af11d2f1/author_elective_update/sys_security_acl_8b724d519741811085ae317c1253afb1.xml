@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_snc_wind_turbine_cmdb_ci_substation.*</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 14:50:04</sys_created_on>
+        <sys_id>8b724d519741811085ae317c1253afb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine_cmdb_ci_substation.*</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_security_acl_8b724d519741811085ae317c1253afb1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 14:50:04</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>85d829f41b854510e84d2f8dee4bcb5c</instance_id>
+        <instance_name>projectnow</instance_name>
+        <name>sys_security_acl_8b724d519741811085ae317c1253afb1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description/><name>x_snc_wind_turbine_cmdb_ci_substation.*</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-13 14:50:04</sys_created_on><sys_id>8b724d519741811085ae317c1253afb1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_wind_turbine_cmdb_ci_substation.*</sys_name><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_security_acl_8b724d519741811085ae317c1253afb1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-13 14:50:04</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>781184924</payload_hash>
+        <record_name>x_snc_wind_turbine_cmdb_ci_substation.*</record_name>
+        <reverted_from/>
+        <source>e072f8959701811085ae317c1253af2b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 14:50:04</sys_created_on>
+        <sys_id>eec2c5919741811085ae317c1253af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e53eacfce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 14:50:04</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>2ac2c591b7418110b7182dba9f925000</update_guid>
+        <update_guid_history>2ac2c591b7418110b7182dba9f925000:781184924</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 16:47:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>084be75caec1443c8c4fbf59b6f99c24</sys_id>
+        <sys_metadata>8b724d519741811085ae317c1253afb1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine_cmdb_ci_substation.*</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent display_value="x_snc_wind_turbine_cmdb_ci_substation">67caaa349785011085ae317c1253af66</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_8b724d519741811085ae317c1253afb1</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_8b724d519741811085ae317c1253afb1">eec2c5919741811085ae317c1253af00</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 16:47:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

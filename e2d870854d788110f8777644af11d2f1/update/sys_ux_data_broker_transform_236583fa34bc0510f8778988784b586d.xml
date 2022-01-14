@@ -47,7 +47,7 @@
 		mapOptions["routeMarkers"] = {
 			"#BE00A5": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-magenta.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-magenta.svg"}, 
 			"#6B8391": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-gray.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-gray.svg"},
-			"#51A500": {"incident" : "marker-route-destination-green.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-green.svg"},
+			"#51A500": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-green.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-green.svg"},
 			"#0006D0": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-navy.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-navy.svg"},
 			"#AF8600": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-yellow.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-yellow.svg"},
 			"#C42900": {"x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-orange.svg", "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-orange.svg"},
@@ -72,14 +72,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-06 05:57:25</sys_created_on>
         <sys_id>236583fa34bc0510f8778988784b586d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Get Wind Turbine Google Map Settings</sys_name>
         <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
         <sys_update_name>sys_ux_data_broker_transform_236583fa34bc0510f8778988784b586d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-07 05:03:05</sys_updated_on>
+        <sys_updated_on>2022-01-14 18:11:49</sys_updated_on>
     </sys_ux_data_broker_transform>
     <sys_translated_text action="delete_multiple" query="documentkey=236583fa34bc0510f8778988784b586d"/>
 </record_update>

@@ -17,24 +17,24 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_snc_wind_turbine.gearbox_user,x_snc_wind_turbine.wt_equipment_assigner</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-02 15:09:53</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81bdd43134bc4110f8778988784b58c1</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Gearbox</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Gearboxes</sys_name>
         <sys_overrides/>
         <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
         <sys_update_name>sys_app_module_81bdd43134bc4110f8778988784b58c1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-11 03:36:47</sys_updated_on>
+        <sys_updated_on>2022-01-13 16:56:25</sys_updated_on>
         <timeline_page/>
-        <title>Gearbox</title>
+        <title>Gearboxes</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

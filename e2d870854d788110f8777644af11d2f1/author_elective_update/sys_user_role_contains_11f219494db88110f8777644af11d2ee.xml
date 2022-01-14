@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="DELETE">
+        <contains display_value="x_snc_wind_turbine.wt_approver" name="x_snc_wind_turbine.wt_approver">6c4109c94d788110f8777644af11d211</contains>
+        <role display_value="x_snc_wind_turbine.wt_admin" name="x_snc_wind_turbine.wt_admin">014049c94d788110f8777644af11d241</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-31 11:06:33</sys_created_on>
+        <sys_id>11f219494db88110f8777644af11d2ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine.wt_approver.x_snc_wind_turbine.wt_admin</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_user_role_contains_11f219494db88110f8777644af11d2ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-31 11:06:33</sys_updated_on>
+    </sys_user_role_contains>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>85d829f41b854510e84d2f8dee4bcb5c</instance_id>
+        <instance_name>projectnow</instance_name>
+        <name>sys_user_role_contains_11f219494db88110f8777644af11d2ee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_snc_wind_turbine.wt_approver" name="x_snc_wind_turbine.wt_approver">6c4109c94d788110f8777644af11d211</contains>
+        <role display_value="x_snc_wind_turbine.wt_admin" name="x_snc_wind_turbine.wt_admin">014049c94d788110f8777644af11d241</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-31 11:06:33</sys_created_on>
+        <sys_id>11f219494db88110f8777644af11d2ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine.wt_approver.x_snc_wind_turbine.wt_admin</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_user_role_contains_11f219494db88110f8777644af11d2ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-31 11:06:33</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>]]></payload>
+        <payload_hash>127966404</payload_hash>
+        <record_name>x_snc_wind_turbine.wt_approver.x_snc_wind_turbine.wt_admin</record_name>
+        <reverted_from/>
+        <source>f0ea66749785011085ae317c1253afdf</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-12 09:09:02</sys_created_on>
+        <sys_id>012b6eb49785011085ae317c1253af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e4d8c39a30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-12 09:09:02</sys_updated_on>
+        <type>Contained Role</type>
+        <update_guid>cd2b6eb4068501100c556024b2fc065e</update_guid>
+        <update_guid_history>cd2b6eb4068501100c556024b2fc065e:127966404</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-14 14:01:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role_contains">sys_user_role_contains</sys_db_object>
+        <sys_id>770a23aa0ad2497a84153525b72614f1</sys_id>
+        <sys_metadata>11f219494db88110f8777644af11d2ee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine.wt_approver.x_snc_wind_turbine.wt_admin</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_user_role_contains_11f219494db88110f8777644af11d2ee</sys_update_name>
+        <sys_update_version display_value="sys_user_role_contains_11f219494db88110f8777644af11d2ee">012b6eb49785011085ae317c1253af5f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-14 14:01:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -10,8 +10,8 @@
             <plural>Fluid Sensors</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-01-02 13:31:45</sys_created_on>
-            <sys_id>c8674471347c4110f8778988784b5873</sys_id>
+            <sys_created_on>2022-01-13 07:36:05</sys_created_on>
+            <sys_id>117fd38d970d411085ae317c1253afad</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Fluid Sensor</sys_name>
             <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
@@ -19,7 +19,7 @@
             <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
             <sys_update_name>sys_documentation_x_snc_wind_turbine_fluid_sensor__en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-01-02 13:31:45</sys_updated_on>
+            <sys_updated_on>2022-01-13 07:36:05</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

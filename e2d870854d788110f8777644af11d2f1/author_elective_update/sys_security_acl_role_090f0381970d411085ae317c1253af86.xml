@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 06:24:15</sys_created_on>
+        <sys_id>090f0381970d411085ae317c1253af86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine_temperature_sensor.x_snc_wind_turbine.temperature_sensor_user</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_security_acl display_value="x_snc_wind_turbine_temperature_sensor">850f0381970d411085ae317c1253af83</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_090f0381970d411085ae317c1253af86</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 06:24:15</sys_updated_on>
+        <sys_user_role display_value="x_snc_wind_turbine.temperature_sensor_user" name="x_snc_wind_turbine.temperature_sensor_user">0e37c0fd343c4110f8778988784b5817</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>85d829f41b854510e84d2f8dee4bcb5c</instance_id>
+        <instance_name>projectnow</instance_name>
+        <name>sys_security_acl_role_090f0381970d411085ae317c1253af86</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-13 06:24:15</sys_created_on><sys_id>090f0381970d411085ae317c1253af86</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_wind_turbine_temperature_sensor.x_snc_wind_turbine.temperature_sensor_user</sys_name><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_security_acl display_value="x_snc_wind_turbine_temperature_sensor">850f0381970d411085ae317c1253af83</sys_security_acl><sys_update_name>sys_security_acl_role_090f0381970d411085ae317c1253af86</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-13 06:24:15</sys_updated_on><sys_user_role display_value="x_snc_wind_turbine.temperature_sensor_user" name="x_snc_wind_turbine.temperature_sensor_user">0e37c0fd343c4110f8778988784b5817</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-304716197</payload_hash>
+        <record_name>x_snc_wind_turbine_temperature_sensor.x_snc_wind_turbine.temperature_sensor_user</record_name>
+        <reverted_from/>
+        <source>df827e3c9785011085ae317c1253af5c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 06:24:16</sys_created_on>
+        <sys_id>c10f0381970d411085ae317c1253af89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e521bba8f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 06:24:16</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>0d0f0381970d4110e737870ccb361088</update_guid>
+        <update_guid_history>0d0f0381970d4110e737870ccb361088:-304716197</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_wind_turbine_temperature_sensor.x_snc_wind_turbine.temperature_sensor_user">d4ed5b0d970d411085ae317c1253af5e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 07:29:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>736b573701cb434bb86ff33b9af77389</sys_id>
+        <sys_metadata>090f0381970d411085ae317c1253af86</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine_temperature_sensor.x_snc_wind_turbine.temperature_sensor_user</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent display_value="">850f0381970d411085ae317c1253af83</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_090f0381970d411085ae317c1253af86</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_090f0381970d411085ae317c1253af86">c10f0381970d411085ae317c1253af89</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 07:29:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
