@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>macroponent</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "container_5",
+  "elementLabel" : "Container 5",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "container_6",
+      "elementLabel" : "Container 6",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "stylized_text_1",
+          "elementLabel" : "Stylized text 1",
+          "propertyValues" : {
+            "text" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Wind Turbine Agent Workspace",
+                "comment" : ""
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "h2"
+            },
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { }"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "root" : null,
+            "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+            "styles" : null,
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "flex"
+          },
+          "version" : "2.0.0"
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "container_1",
+  "elementLabel" : "Container 1",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "container_2",
+      "elementLabel" : "Container 2",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Column 1",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "container_3",
+          "elementLabel" : "Container 3",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "agent_critical_incidents_1",
+              "elementLabel" : "Critical Incidents",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Critical Incidents ",
+                    "comment" : ""
+                  }
+                },
+                "chartType" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "single_score"
+                },
+                "dataConfigurations" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "[{\"__viz_config_id\":\"dGFibGV4X3NuY193aW5kX3R1cmJpbmVfd2luZF90dXJiaW5lX2luY2lkZW50MTY0MjI0MDQzOTMwMg==\",\"__viz_config_label\":\"Wind Turbine Incident\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^active=true^priority=1\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_snc_wind_turbine_wind_turbine_incident\"}]"
+                },
+                "styleConfigurations" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"seriesConfig\":{\"data_0_0\":{\"enableAbbreviation\":false}},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"}}"
+                },
+                "isRealtime" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "showRealtimeIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "auto"
+                },
+                "border" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "refreshInterval" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "kpiDetailsNavigation" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "followFilters" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideFiltersInfo" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "filterConfigurations" : {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "parFilters" ]
+                  }
+                },
+                "hideHeader" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "refreshFrequency" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "ckyfoaajpwaaaaggddeiiffpozdczhx",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
+                "sourceEventCorrelationId" : null,
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "4a0512b59709c11085ae317c1253afba"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "ckyfoaajpwaaaaghddeiiffuaakzzupn",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "67cf18a377c70010cb834a2a6910619a",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "margin-left" : "1em"
+              }
+            }, {
+              "elementId" : "agent_assigned_incidents_1",
+              "elementLabel" : "Assigned Incidents",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Assigned Incidents",
+                    "comment" : ""
+                  }
+                },
+                "chartType" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "single_score"
+                },
+                "dataConfigurations" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "[{\"__viz_config_id\":\"dGFibGV4X3NuY193aW5kX3R1cmJpbmVfd2luZF90dXJiaW5lX2luY2lkZW50MTY0MjI0MDQ4MDU1Mw==\",\"__viz_config_label\":\"Wind Turbine Incident\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"active=true^assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_snc_wind_turbine_wind_turbine_incident\"}]"
+                },
+                "styleConfigurations" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"seriesConfig\":{\"data_0_0\":{\"enableAbbreviation\":false}},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"}}"
+                },
+                "isRealtime" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "showRealtimeIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "auto"
+                },
+                "border" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "refreshInterval" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "kpiDetailsNavigation" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "followFilters" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideFiltersInfo" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "filterConfigurations" : {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "parFilters" ]
+                  }
+                },
+                "hideHeader" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "refreshFrequency" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "ckyfoaarogaaaagiddeiiffyxefffzmm",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
+                "sourceEventCorrelationId" : null,
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "4a0512b59709c11085ae317c1253afba"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "ckyfoaarogaaaagjddeiiffrffjjddqdqn",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "67cf18a377c70010cb834a2a6910619a",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "root" : null,
+                "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+                "styles" : null,
+                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+                "type" : "flex"
+              },
+              "version" : "2.0.0"
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "100%"
+          }
+        }, {
+          "elementId" : "container_4",
+          "elementLabel" : "Container 4",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "agent_by_quipment_1",
+              "elementLabel" : "By Equipment",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "By Equipment",
+                    "comment" : ""
+                  }
+                },
+                "chartType" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "bar"
+                },
+                "dataConfigurations" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "[{\"__viz_config_id\":\"dGFibGV4X3NuY193aW5kX3R1cmJpbmVfd2luZF90dXJiaW5lX2luY2lkZW50MTY0MjI0MDUxNzM4Mg==\",\"__viz_config_label\":\"Wind Turbine Incident\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"active=true^assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe\",\"group_by\":\"cmdb_ci.sys_class_name\",\"number_of_groups\":10,\"show_other\":false,\"sort_order\":\"desc\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_snc_wind_turbine_wind_turbine_incident\"}]"
+                },
+                "styleConfigurations" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"xAxisConfig\":{},\"yAxisConfig\":{},\"seriesConfig\":{\"data_0_0\":{\"enableAbbreviation\":false}},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true,\"showPercentages\":false},\"registerPosition\":\"bottom\"}"
+                },
+                "isRealtime" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "showRealtimeIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "auto"
+                },
+                "border" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "refreshInterval" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "kpiDetailsNavigation" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "followFilters" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideFiltersInfo" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "filterConfigurations" : {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "parFilters" ]
+                  }
+                },
+                "hideHeader" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "refreshFrequency" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "ckyfobbddioaaaagyddeiiffiiudzesddu",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
+                "sourceEventCorrelationId" : null,
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "4a0512b59709c11085ae317c1253afba"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "ckyfobbddioaaaagzddeiiffrhtaacalx",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "67cf18a377c70010cb834a2a6910619a",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "margin-left" : "1em"
+              }
+            }, {
+              "elementId" : "list__simple_1",
+              "elementLabel" : "List - Simple 1",
+              "propertyValues" : {
+                "listTitle" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "All Assigned Incidents",
+                    "comment" : ""
+                  }
+                },
+                "table" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "task"
+                },
+                "query" : {
+                  "type" : "CLIENT_TRANSFORM",
+                  "transform" : {
+                    "operands" : {
+                      "type" : "LIST_CONTAINER",
+                      "container" : [ {
+                        "type" : "JSON_LITERAL",
+                        "value" : "active="
+                      }, {
+                        "type" : "JSON_LITERAL",
+                        "value" : "true"
+                      }, {
+                        "type" : "JSON_LITERAL",
+                        "value" : "^assigned_toDYNAMIC"
+                      }, {
+                        "type" : "JSON_LITERAL",
+                        "value" : "90d1921e5f510100a9ad2572f2b477fe"
+                      }, {
+                        "type" : "JSON_LITERAL",
+                        "value" : "^ORDERBYpriority"
+                      } ]
+                    },
+                    "operator" : "CONCAT"
+                  }
+                },
+                "columns" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "number,priority,state,short_description"
+                },
+                "groupByField" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "limit" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 5
+                },
+                "maxColumns" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 5
+                },
+                "page" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 1
+                },
+                "highlightedValueConfigId" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "hideHighlightedValues" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideHeader" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideTitle" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideTitleRowCount" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRefreshButton" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideLastRefreshedText" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideColumnGrouping" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideColumnFiltering" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideColumnSorting" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideInlineEditing" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideLinks" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideViewAll" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideCellFilter" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideCheckboxHover" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideFilterPanel" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideFirstPage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideLastPage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideLimitSelector" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideMenuButton" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideMultiEdit" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideDeclarativeActions" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideNextPage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePages" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePagination" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hidePanel" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hidePanelAdvanced" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePanelConditionDelete" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePanelFooter" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePanelRestore" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePreviousPage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideQuickEdit" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideRange" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRowCount" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRowSelector" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideSelectAll" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideEmptyStateImage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideDBViews" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideUnnecessaryRowSelectors" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "wordWrap" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "maxCharLimit" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 4000
+                },
+                "refreshRequested" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "recordSelectedTable" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "recordSelectedSysId" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "recordSelectedQuery" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "recordSelectedView" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "2b1c080881e05dc63b917044290b233f",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "root" : null,
+                "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+                "styles" : null,
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "flex"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "100%"
+          }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "root" : null,
+            "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+            "styles" : null,
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "flex"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    }, {
+      "elementId" : "field_service_google_map_1",
+      "elementLabel" : "Field service Google map 1",
+      "propertyValues" : {
+        "mapSettings" : {
+          "type" : "DATA_OUTPUT_BINDING",
+          "binding" : {
+            "address" : [ "agent_google_map_settings_1", "output", "settings" ]
+          }
+        },
+        "googleKey" : {
+          "type" : "DATA_OUTPUT_BINDING",
+          "binding" : {
+            "address" : [ "agent_google_map_settings_1", "output", "google" ]
+          }
+        },
+        "selectedRecordId" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "mapDisplaySettings" : {
+          "type" : "DATA_OUTPUT_BINDING",
+          "binding" : {
+            "address" : [ "agent_google_map_settings_1", "output", "settings" ]
+          }
+        },
+        "mapMarkers" : {
+          "type" : "DATA_OUTPUT_BINDING",
+          "binding" : {
+            "address" : [ "get_wind_turbine_markers_1", "output", "markers" ]
+          }
+        },
+        "routeMarkers" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "activeRoutes" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Column 2",
+      "definition" : {
+        "id" : "97ee7fccf2d75f616fbd491bc81484ef",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "height" : "calc(100vh - 15rem)"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+        "styles" : null,
+        "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+        "type" : "flex"
+      },
+      "version" : "2.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "236583fa34bc0510f8778988784b586d",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "agent_google_map_settings_1",
+  "elementLabel" : "Get Wind Turbine Google Map Settings 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "c38763b234304510f8778988784b5841",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "get_wind_turbine_markers_1",
+  "elementLabel" : "Get Wind Turbine Markers 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <dispatched_events/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"400px","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "flex"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Agent Home</name>
+        <props>[ ]</props>
+        <required_translations>[ {
+  "message" : "All Assigned Incidents",
+  "comment" : ""
+}, {
+  "message" : "Assigned Incidents",
+  "comment" : ""
+}, {
+  "message" : "By Equipment",
+  "comment" : ""
+}, {
+  "message" : "Critical Incidents ",
+  "comment" : ""
+}, {
+  "message" : "Wind Turbine Agent Workspace",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-15 09:20:46</sys_created_on>
+        <sys_id>569ac2fd97c5c11085ae317c1253af71</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Agent Home</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ux_macroponent_569ac2fd97c5c11085ae317c1253af71</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-15 10:26:13</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
     <sys_ux_applicability action="INSERT_OR_UPDATE">
         <active>true</active>
-        <api_name>x_snc_wind_turbine.Wind Turbine Workspace</api_name>
+        <api_name>x_snc_wind_turbine.Wind Turbine Agent Workspace</api_name>
         <description/>
-        <name>Wind Turbine Workspace</name>
-        <roles name="x_snc_wind_turbine.wt_ux_substation_manager">989339fd9785c11085ae317c1253af33</roles>
+        <name>Wind Turbine Agent Workspace</name>
+        <roles name="x_snc_wind_turbine.wt_agent">2771810d4d788110f8777644af11d210</roles>
         <sys_class_name>sys_ux_applicability</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-01-12 14:17:43</sys_created_on>
+        <sys_created_on>2022-01-15 10:40:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3ec177fc97c9011085ae317c1253af24</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Wind Turbine Workspace</sys_name>
+        <sys_id>1dcc96f99709c11085ae317c1253affe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Wind Turbine Agent Workspace</sys_name>
         <sys_overrides/>
         <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
-        <sys_update_name>sys_ux_applicability_3ec177fc97c9011085ae317c1253af24</sys_update_name>
+        <sys_update_name>sys_ux_applicability_1dcc96f99709c11085ae317c1253affe</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-15 08:08:20</sys_updated_on>
+        <sys_updated_on>2022-01-15 10:56:10</sys_updated_on>
     </sys_ux_applicability>
 </record_update>

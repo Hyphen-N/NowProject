@@ -802,91 +802,16 @@
               "value" : null
             },
             "mapDisplaySettings" : {
-              "type" : "JSON_LITERAL",
-              "value" : {
-                "maxAutoZoomLevel" : 12,
-                "initialZoom" : 5,
-                "mapOptions" : {
-                  "styles" : "",
-                  "mapTypeId" : "roadmap",
-                  "streetViewControl" : true,
-                  "routeType" : "street_level",
-                  "icons" : {
-                    "colocated" : "marker-agents-plus-tasks-colocated.svg",
-                    "colocatedFocus" : "marker-agents-plus-tasks-colocated-on-focus.svg",
-                    "pending" : "marker-tasks-single-pending-dispatch.svg",
-                    "pendingFocus" : "marker-tasks-single-pending-dispatch-on-focus.svg"
-                  },
-                  "routeMarkers" : {
-                    "#BE00A5" : {
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-magenta.svg"
-                    },
-                    "#6B8391" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-gray.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-gray.svg"
-                    },
-                    "#51A500" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-green.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-green.svg"
-                    },
-                    "#0006D0" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-navy.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-navy.svg"
-                    },
-                    "#AF8600" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-yellow.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-yellow.svg"
-                    },
-                    "#C42900" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-orange.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-orange.svg"
-                    },
-                    "#009F85" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-teal.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-teal.svg"
-                    },
-                    "#008DD5" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-blue.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-blue.svg"
-                    },
-                    "#6F00E3" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-purple.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-purple.svg"
-                    },
-                    "#83AD00" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-gy.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-gy.svg"
-                    },
-                    "#D20039" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-sapphire.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-route-tech-pink.svg"
-                    },
-                    "onFocus" : {
-                      "x_snc_wind_turbine_wind_turbine_incident" : "marker-route-destination-on-focus.svg",
-                      "x_snc_wind_turbine_wind_turbine" : "marker-techs-single-on-focus.svg"
-                    }
-                  }
-                }
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "wind_turbine_markers_1", "output", "markers" ]
               }
             },
             "mapMarkers" : {
-              "type" : "JSON_LITERAL",
-              "value" : [ {
-                "items" : [ {
-                  "sys_id" : "4b6ccea234b00510f8778988784b5813",
-                  "table" : "x_snc_wind_turbine_wind_turbine",
-                  "displayValue" : "Texas-WT1",
-                  "type" : "Wind Turbine",
-                  "fields" : "name { label value displayValue} \t\t\t\tcode {lable value displayValue} \t\t\t\tserial_number {label value displayValue} \t\t\t\tmodel_number {label value displayValue}",
-                  "image" : "marker-techs-single.svg",
-                  "highlightedIcon" : "marker-techs-single-on-focus.svg",
-                  "newly_assigned" : null
-                } ],
-                "lng" : -96.803514,
-                "lat" : 33.108618,
-                "image" : "marker-techs-single.svg",
-                "highlightedIcon" : "marker-techs-single-on-focus.svg"
-              } ]
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "wind_turbine_markers_1", "output", "markers" ]
+              }
             },
             "routeMarkers" : {
               "type" : "JSON_LITERAL",
@@ -1548,13 +1473,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-12 14:17:43</sys_created_on>
         <sys_id>aac137fc27c90110567bb9cb16709fee</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
         <sys_update_name>sys_ux_macroponent_aac137fc27c90110567bb9cb16709fee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-14 18:27:14</sys_updated_on>
+        <sys_updated_on>2022-01-15 08:27:25</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
