@@ -12,54 +12,140 @@ WTWorkSpaceUtil.prototype = {
     initialize: function() {},
     getWindTurbines: function() {
         var markers = [];
-        // Pull the wind Turbine Records
-        var windTurbs = new GlideRecord(WTScriptConstants.WIND_TURBINE_TABLE);
-        windTurbs.addQuery("locationISNOTEMPTY"); //Adding Condition
-        windTurbs.query(); // Pulling the data
+        var ssgr = new GlideRecord("x_snc_wind_turbine_substation_user");
+        ssgr.addQuery("user", gs.getUserID());
+        ssgr.query();
+        while (ssgr.next()) {
+            // Pull the wind Turbine Records
+            var windTurbs = new GlideRecord(WTScriptConstants.WIND_TURBINE_TABLE);
+            windTurbs.addQuery("locationISNOTEMPTY"); //Adding Condition
+            windTurbs.addQuery("substation", ssgr.getValue("substation"));
+            windTurbs.query(); // Pulling the data
 
-        //Pull the necessary data
-        while (windTurbs.next()) {
-            var sysId = windTurbs.getValue("sys_id");
-            var table = WTScriptConstants.WIND_TURBINE_TABLE;
-            var displayValue = windTurbs.getDisplayValue("name");
-            var type = WTScriptConstants.WIND_TURBINE_TYPE;
-            var fields = this._getWindTurbineFields();
-            var lat = this._parseFloatForCoords(windTurbs.getElement("location.latitude"));
-            var lng = this._parseFloatForCoords(windTurbs.getElement("location.longitude"));
-            var WindTurbineImages = {
-                'defaultIcon': 'marker-techs-single.svg',
-                'highlightedIcon': 'marker-techs-single-on-focus.svg'
-            };
-            var multipleIncidentImages = {
-                'defaultIcon': 'marker-agents-plus-tasks-colocated.svg',
-                'highlightedIcon': 'marker-agents-plus-tasks-colocated-on-focus.svg'
-            };
+            //Pull the necessary data
+            while (windTurbs.next()) {
+                var sysId = windTurbs.getValue("sys_id");
+                var table = WTScriptConstants.WIND_TURBINE_TABLE;
+                var displayValue = windTurbs.getDisplayValue("name");
+                var type = WTScriptConstants.WIND_TURBINE_TYPE;
+                var fields = this._getWindTurbineFields();
+                var lat = this._parseFloatForCoords(windTurbs.getElement("location.latitude"));
+                var lng = this._parseFloatForCoords(windTurbs.getElement("location.longitude"));
+                var WindTurbineImages = {
+                    'defaultIcon': 'marker-techs-single.svg',
+                    'highlightedIcon': 'marker-techs-single-on-focus.svg'
+                };
+                var multipleIncidentImages = {
+                    'defaultIcon': 'marker-agents-plus-tasks-colocated.svg',
+                    'highlightedIcon': 'marker-agents-plus-tasks-colocated-on-focus.svg'
+                };
 
-            var incidentImages = {
-                'defaultIcon': 'marker-tasks-single-pending-dispatch.svg',
-                'highlightedIcon': 'marker-tasks-single-pending-dispatch-on-focus.svg'
-            };
-            var marker = this._addWindTurbineMarker(sysId, table, displayValue, type, fields, lat, lng, WindTurbineImages);
+                var incidentImages = {
+                    'defaultIcon': 'marker-tasks-single-pending-dispatch.svg',
+                    'highlightedIcon': 'marker-tasks-single-pending-dispatch-on-focus.svg'
+                };
+                var marker = this._addWindTurbineMarker(sysId, table, displayValue, type, fields, lat, lng, WindTurbineImages);
 
-            var wtIndc = new GlideRecord(WTScriptConstants.INCIDENT_TABLE);
-            wtIndc.addQuery("cmdb_ci.sys_id", sysId);
-            wtIndc.query();
-            var count = 0;
-            while (wtIndc.next()) {
-                count++;
-                sysId = wtIndc.getValue("sys_id");
-                table = WTScriptConstants.WIND_TURBINE_TABLE;
-                displayValue = wtIndc.getValue("number");
-                type = WTScriptConstants.WIND_TURBINE_INCID_TYPE;
-                fields = this._getWindTurbineIncidentFields();
-                var incMarker = this._addIncident(sysId, table, displayValue, type, fields, incidentImages);
-                marker["items"].push(incMarker);
+                var fdgr = new GlideRecord("x_snc_wind_turbine_cmdb_ci_field_device");
+                fdgr.addQuery("wind_turbine", windTurbs.getValue("sys_id"));
+                fdgr.query();
+                var count = 0;
+                while (fdgr.next()) {
+                    var wtIndc = new GlideRecord(WTScriptConstants.INCIDENT_TABLE);
+                    wtIndc.addQuery("cmdb_ci", fdgr.getValue("sys_id"));
+                    wtIndc.addActiveQuery();
+                    wtIndc.query();
+
+                    while (wtIndc.next()) {
+                        count++;
+                        sysId = wtIndc.getValue("sys_id");
+                        table = WTScriptConstants.INCIDENT_TABLE;
+                        displayValue = wtIndc.getValue("number");
+                        type = WTScriptConstants.WIND_TURBINE_INCID_TYPE;
+                        fields = this._getWindTurbineIncidentFields();
+                        var incMarker = this._addIncident(sysId, table, displayValue, type, fields, incidentImages);
+                        marker["items"].push(incMarker);
+                    }
+                }
+                if (count >= 1) {
+                    marker['image'] = multipleIncidentImages.defaultIcon;
+                    marker['highlightedIcon'] = multipleIncidentImages.highlightedIcon;
+                } else{
+					marker['image'] = multipleIncidentImages.defaultIcon;
+                    marker['highlightedIcon'] = multipleIncidentImages.highlightedIcon;
+				}
+
+                markers.push(marker);
             }
-            if (count > 1) {
-                marker['image'] = multipleIncidentImages.defaultIcon;
-                marker['highlightedIcon'] = multipleIncidentImages.highlightedIcon;
+        }
+        return markers;
+    },
+    getAgentWindTurbines: function() {
+        var markers = [];
+        var ssgr = new GlideRecord("x_snc_wind_turbine_cmdb_ci_substation");
+        ssgr.query();
+        while (ssgr.next()) {
+            // Pull the wind Turbine Records
+            var windTurbs = new GlideRecord(WTScriptConstants.WIND_TURBINE_TABLE);
+            windTurbs.addQuery("locationISNOTEMPTY"); //Adding Condition
+            windTurbs.addQuery("substation", ssgr.getValue("sys_id"));
+            windTurbs.query(); // Pulling the data
+
+            //Pull the necessary data
+            while (windTurbs.next()) {
+                var sysId = windTurbs.getValue("sys_id");
+                var table = WTScriptConstants.WIND_TURBINE_TABLE;
+                var displayValue = windTurbs.getDisplayValue("name");
+                var type = WTScriptConstants.WIND_TURBINE_TYPE;
+                var fields = this._getWindTurbineFields();
+                var lat = this._parseFloatForCoords(windTurbs.getElement("location.latitude"));
+                var lng = this._parseFloatForCoords(windTurbs.getElement("location.longitude"));
+                var WindTurbineImages = {
+                    'defaultIcon': 'marker-techs-single.svg',
+                    'highlightedIcon': 'marker-techs-single-on-focus.svg'
+                };
+                var multipleIncidentImages = {
+                    'defaultIcon': 'marker-agents-plus-tasks-colocated.svg',
+                    'highlightedIcon': 'marker-agents-plus-tasks-colocated-on-focus.svg'
+                };
+
+                var incidentImages = {
+                    'defaultIcon': 'marker-tasks-single-pending-dispatch.svg',
+                    'highlightedIcon': 'marker-tasks-single-pending-dispatch-on-focus.svg'
+                };
+                var marker = this._addWindTurbineMarker(sysId, table, displayValue, type, fields, lat, lng, WindTurbineImages);
+
+                var fdgr = new GlideRecord("x_snc_wind_turbine_cmdb_ci_field_device");
+                fdgr.addQuery("wind_turbine", windTurbs.getValue("sys_id"));
+                fdgr.query();
+                var count = 0;
+                while (fdgr.next()) {
+                    var wtIndc = new GlideRecord(WTScriptConstants.INCIDENT_TABLE);
+                    wtIndc.addQuery("cmdb_ci", fdgr.getValue("sys_id"));
+                    wtIndc.addActiveQuery();
+                    wtIndc.addQuery("assigned_to", gs.getUserID());
+                    wtIndc.query();
+
+                    while (wtIndc.next()) {
+                        count++;
+                        sysId = wtIndc.getValue("sys_id");
+                        table = WTScriptConstants.INCIDENT_TABLE;
+                        displayValue = wtIndc.getValue("number");
+                        type = WTScriptConstants.WIND_TURBINE_INCID_TYPE;
+                        fields = this._getWindTurbineIncidentFields();
+                        var incMarker = this._addIncident(sysId, table, displayValue, type, fields, incidentImages);
+                        marker["items"].push(incMarker);
+                    }
+                }
+                if (count >= 1) {
+                    marker['image'] = multipleIncidentImages.defaultIcon;
+                    marker['highlightedIcon'] = multipleIncidentImages.highlightedIcon;
+                }
+                if (count === 0) {
+                    continue;
+                }
+                markers.push(marker);
             }
-            markers.push(marker);
         }
         return markers;
     },
@@ -118,13 +204,13 @@ WTWorkSpaceUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-06 08:40:50</sys_created_on>
         <sys_id>050be73634304510f8778988784b58a8</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>WTWorkSpaceUtil</sys_name>
         <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
         <sys_update_name>sys_script_include_050be73634304510f8778988784b58a8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-07 05:30:15</sys_updated_on>
+        <sys_updated_on>2022-01-16 06:51:53</sys_updated_on>
     </sys_script_include>
 </record_update>
