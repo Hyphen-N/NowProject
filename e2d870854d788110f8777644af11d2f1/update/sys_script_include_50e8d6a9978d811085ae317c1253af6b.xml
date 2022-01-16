@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_wind_turbine.WindTurbineFilters</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Filters for Wind Turbine workspace</description>
+        <name>WindTurbineFilters</name>
+        <script><![CDATA[var WindTurbineFilters = Class.create();
+WindTurbineFilters.prototype = {
+    initialize: function() {},
+    /* build a comma seperated list of wint turbine incidents for substations belong to an user*/
+    getWindTurbineIncidents: function(userId) {
+        var ssgr = new GlideRecord("x_snc_wind_turbine_substation_user");
+        ssgr.addQuery("user", userId);
+        ssgr.query();
+        var wtincidents = '';
+        while (ssgr.next()) {
+            var wtgr = new GlideRecord("x_snc_wind_turbine_wind_turbine");
+            wtgr.addQuery("substation", ssgr.getValue("substation"));
+            wtgr.query();
+            while (wtgr.next()) {
+                var fdgr = new GlideRecord("x_snc_wind_turbine_cmdb_ci_field_device");
+                fdgr.addQuery("wind_turbine", wtgr.getValue("sys_id"));
+                fdgr.query();
+                while (fdgr.next()) {
+                    var incgr = new GlideRecord("x_snc_wind_turbine_wind_turbine_incident");
+                    incgr.addQuery("cmdb_ci", fdgr.getValue("sys_id"));
+                    incgr.query();
+                    if (incgr.hasNext() && wtincidents !== '') {
+                        wtincidents += ',';
+                    }
+                    while (incgr.next()) {
+                        wtincidents += incgr.sys_id;
+                        if (incgr.hasNext()) {
+                            wtincidents += ',';
+                        }
+                    }
+                }
+            }
+        }
+        return wtincidents;
+    },
+    getWindTurbines: function(userId) {
+        var ssgr = new GlideRecord("x_snc_wind_turbine_substation_user");
+        ssgr.addQuery("user", userId);
+        ssgr.query();
+        var windturbines = '';
+        while (ssgr.next()) {
+            var wtgr = new GlideRecord("x_snc_wind_turbine_wind_turbine");
+            wtgr.addQuery("substation", ssgr.getValue("substation"));
+            wtgr.query();
+            if (wtgr.hasNext() && windturbines !== '') {
+                windturbines += ',';
+            }
+            while (wtgr.next()) {
+                windturbines += wtgr.sys_id;
+                if (wtgr.hasNext()) {
+                    windturbines += ',';
+                }
+            }
+        }
+        return windturbines;
+    },
+    getSubstations: function(userId) {
+        var ssgr = new GlideRecord("x_snc_wind_turbine_substation_user");
+        ssgr.addQuery("user", userId);
+        ssgr.query();
+        var substations = '';
+        while (ssgr.next()) {
+            substations += ssgr.substation.sys_id;
+            if (ssgr.hasNext()) {
+                substations += ',';
+            }
+        }
+        return substations;
+    },
+    getGearboxes: function(userId) {
+        var ssgr = new GlideRecord("x_snc_wind_turbine_substation_user");
+        ssgr.addQuery("user", userId);
+        ssgr.query();
+        var gearboxes = '';
+        while (ssgr.next()) {
+            var wtgr = new GlideRecord("x_snc_wind_turbine_wind_turbine");
+            wtgr.addQuery("substation", ssgr.getValue("substation"));
+            wtgr.query();
+            while (wtgr.next()) {
+                var fdgr = new GlideRecord("x_snc_wind_turbine_gearbox");
+                fdgr.addQuery("wind_turbine", wtgr.getValue("sys_id"));
+                fdgr.query();
+
+                if (fdgr.hasNext() && gearboxes !== '') {
+                    gearboxes += ',';
+                }
+                while (fdgr.next()) {
+                    gearboxes += fdgr.sys_id;
+                    if (fdgr.hasNext()) {
+                        gearboxes += ',';
+                    }
+                }
+            }
+        }
+        return gearboxes;
+    },
+    getGenerators: function(userId) {
+        var ssgr = new GlideRecord("x_snc_wind_turbine_substation_user");
+        ssgr.addQuery("user", userId);
+        ssgr.query();
+        var generators = '';
+        while (ssgr.next()) {
+            var wtgr = new GlideRecord("x_snc_wind_turbine_wind_turbine");
+            wtgr.addQuery("substation", ssgr.getValue("substation"));
+            wtgr.query();
+            while (wtgr.next()) {
+                var fdgr = new GlideRecord("x_snc_wind_turbine_generator");
+                fdgr.addQuery("wind_turbine", wtgr.getValue("sys_id"));
+                fdgr.query();
+
+                if (fdgr.hasNext() && generators !== '') {
+                    generators += ',';
+                }
+                while (fdgr.next()) {
+                    generators += fdgr.sys_id;
+                    if (fdgr.hasNext()) {
+                        generators += ',';
+                    }
+                }
+            }
+        }
+        return generators;
+    },
+    getLowSpeedShaft: function(userId) {
+        var ssgr = new GlideRecord("x_snc_wind_turbine_substation_user");
+        ssgr.addQuery("user", userId);
+        ssgr.query();
+        var lss = '';
+        while (ssgr.next()) {
+            var wtgr = new GlideRecord("x_snc_wind_turbine_wind_turbine");
+            wtgr.addQuery("substation", ssgr.getValue("substation"));
+            wtgr.query();
+            while (wtgr.next()) {
+                var fdgr = new GlideRecord("x_snc_wind_turbine_low_speed_shaft");
+                fdgr.addQuery("wind_turbine", wtgr.getValue("sys_id"));
+                fdgr.query();
+
+                if (fdgr.hasNext() && lss !== '') {
+                    lss += ',';
+                }
+                while (fdgr.next()) {
+                    lss += fdgr.sys_id;
+                    if (fdgr.hasNext()) {
+                        lss += ',';
+                    }
+                }
+            }
+        }
+        return lss;
+    },
+    getSensors: function(classname, userId) {
+        var ssgr = new GlideRecord("x_snc_wind_turbine_substation_user");
+        ssgr.addQuery("user", userId);
+        ssgr.query();
+        var sensors = '';
+        while (ssgr.next()) {
+            var wtgr = new GlideRecord("x_snc_wind_turbine_wind_turbine");
+            wtgr.addQuery("substation", ssgr.getValue("substation"));
+            wtgr.query();
+            while (wtgr.next()) {
+                var fdgr = new GlideRecord("x_snc_wind_turbine_cmdb_ci_field_device");
+                fdgr.addQuery("wind_turbine", wtgr.getValue("sys_id"));
+                fdgr.query();
+                while (fdgr.next()) {
+                    var iotgr = new GlideRecord("x_snc_wind_turbine_wind_turbine_sensor");
+                    iotgr.addQuery("field_device", fdgr.getValue("sys_id"));
+                    iotgr.addQuery("sys_class_name", classname);
+                    iotgr.query();
+                    if (iotgr.hasNext() && sensors !== '') {
+                        sensors += ',';
+                    }
+                    while (iotgr.next()) {
+                        sensors += iotgr.sys_id;
+                        if (iotgr.hasNext()) {
+                            sensors += ',';
+                        }
+                    }
+                }
+            }
+        }
+        return sensors;
+    },
+
+    type: 'WindTurbineFilters'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-14 15:45:55</sys_created_on>
+        <sys_id>50e8d6a9978d811085ae317c1253af6b</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>WindTurbineFilters</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_script_include_50e8d6a9978d811085ae317c1253af6b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-15 04:34:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

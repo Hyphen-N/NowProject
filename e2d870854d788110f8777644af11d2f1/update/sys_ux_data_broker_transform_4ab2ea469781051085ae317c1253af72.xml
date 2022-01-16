@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_wind_turbine.GetAgentMapMarkers</api_name>
+        <description>Get all the markers for an agent</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>GetAgentMapMarkers</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var markers = [];
+    var hideMap = (gs.getProperty("sn_fsm_disp_wrkspc.dispatcher_workspace.hide_map") === "true");
+    if (!hideMap) {
+        //Get Wind Turbines
+        var mapUtil = new x_snc_wind_turbine.WTWorkSpaceUtil();
+        markers = mapUtil.getAgentWindTurbines();
+
+    }
+    return {
+        "markers": markers
+    };
+
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-16 05:45:31</sys_created_on>
+        <sys_id>4ab2ea469781051085ae317c1253af72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetAgentMapMarkers</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_4ab2ea469781051085ae317c1253af72</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-16 05:45:31</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ab2ea469781051085ae317c1253af72"/>
+</record_update>

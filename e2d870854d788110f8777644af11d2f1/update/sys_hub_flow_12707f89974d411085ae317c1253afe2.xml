@@ -1,0 +1,2075 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch5-12-15-2021_01-04-2022_2221.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Creating  Incidents based on the Fluid Sensor data</description>
+        <internal_name>fluid_sensor</internal_name>
+        <label_cache>[{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.Table","label":"1➛Wind Turbine Incident Table","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.Records","label":"1➛Wind Turbine Incident Records","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.Count","label":"7➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.Table","label":"7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.Records","label":"7➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"02f25288-da40-4132-a5c3-a67f89af0c80.table_name","label":"7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{}},{"name":"02f25288-da40-4132-a5c3-a67f89af0c80.answer","label":"7➛Answer","reference_display":"Answer","type":"document_id","base_type":"document_id","attributes":{}},{"name":"0de31847-ff00-4580-b008-34a4b5a16b70.context","label":"7➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"9eaff27c-eea5-4ac1-89b3-944ab3c11e4f.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9eaff27c-eea5-4ac1-89b3-944ab3c11e4f.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9eaff27c-eea5-4ac1-89b3-944ab3c11e4f.table_name","label":"7➛Wind Turbine Incident Table","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9eaff27c-eea5-4ac1-89b3-944ab3c11e4f.record","label":"7➛Wind Turbine Incident Record","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"489ee559-93d1-40bc-bcc8-2d63f8684021.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"489ee559-93d1-40bc-bcc8-2d63f8684021.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"489ee559-93d1-40bc-bcc8-2d63f8684021.table_name","label":"5➛Wind Turbine Incident Table","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"489ee559-93d1-40bc-bcc8-2d63f8684021.record","label":"5➛Wind Turbine Incident Record","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sensorid","label":"Trigger➛Fluid Sensor Data Record➛SensorId","reference":"x_snc_wind_turbine_cmdb_ci_field_device","reference_display":"Field Device","type":"reference","base_type":"reference","parent_table_name":"x_snc_wind_turbine_fluid_level_data","column_name":"sensorid"},{"name":"837063d0-11a0-4d43-b273-fe2676786aa7.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"837063d0-11a0-4d43-b273-fe2676786aa7.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"837063d0-11a0-4d43-b273-fe2676786aa7.table_name","label":"3➛Wind Turbine Incident Table","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"837063d0-11a0-4d43-b273-fe2676786aa7.record","label":"3➛Wind Turbine Incident Record","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.fluid_level","label":"Trigger➛Fluid Sensor Data Record➛Fluid Level","reference":"","reference_display":"Fluid Level","type":"decimal","base_type":"decimal","parent_table_name":"x_snc_wind_turbine_fluid_level_data","column_name":"fluid_level"}]</label_cache>
+        <master_snapshot>f6a6f3cd974d411085ae317c1253af17</master_snapshot>
+        <name>Fluid Sensor</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>b3815c5197cd411085ae317c1253af63</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 08:50:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>12707f89974d411085ae317c1253afe2</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Fluid Sensor</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_hub_flow_12707f89974d411085ae317c1253afe2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:07</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=12707f89974d411085ae317c1253afe2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=12707f89974d411085ae317c1253afe2"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_wind_turbine_fluid_level_data">fluid_level&lt;3.5<item endquery="false" field="fluid_level" goto="false" newquery="false" operator="&lt;" or="false" value="3.5"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 11:15:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b3815c5197cd411085ae317c1253af63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:00</sys_updated_on>
+        <table>x_snc_wind_turbine_fluid_level_data</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"0c915c5197cd411085ae317c1253af63","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>12707f89974d411085ae317c1253afe2</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 11:15:00</sys_created_on>
+        <sys_id>0c915c5197cd411085ae317c1253af63</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:00</sys_updated_on>
+        <trigger display_value="">b3815c5197cd411085ae317c1253af63</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>0c915c5197cd411085ae317c1253af63</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 11:15:00</sys_created_on>
+        <sys_id>c0915c5197cd411085ae317c1253af64</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=12707f89974d411085ae317c1253afe2^sys_idNOT IN0c915c5197cd411085ae317c1253af63"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=12707f89974d411085ae317c1253afe2^sys_idNOT INe58633cd974d411085ae317c1253af53"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:52</sys_created_on>
+        <sys_id>e58633cd974d411085ae317c1253af53</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:05</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e58633cd974d411085ae317c1253af53"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e58633cd974d411085ae317c1253af53</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:52</sys_created_on>
+        <sys_id>258633cd974d411085ae317c1253af55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:52</sys_updated_on>
+        <value>x_snc_wind_turbine_fluid_level_data</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e58633cd974d411085ae317c1253af53</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:52</sys_created_on>
+        <sys_id>a98633cd974d411085ae317c1253af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:52</sys_updated_on>
+        <value>fluid_level&lt;3.5</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=e58633cd974d411085ae317c1253af53"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=12707f89974d411085ae317c1253afe2^sys_idNOT INae707f89974d411085ae317c1253afe4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>12707f89974d411085ae317c1253afe2</id>
+        <name>Fluid Sensor</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 08:50:27</sys_created_on>
+        <sys_id>ae707f89974d411085ae317c1253afe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 08:50:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=12707f89974d411085ae317c1253afe2^sys_idNOT INad8633cd974d411085ae317c1253af4b,c98633cd974d411085ae317c1253af3e,dd8633cd974d411085ae317c1253af45"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</model>
+        <model_id>12707f89974d411085ae317c1253afe2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_12707f89974d411085ae317c1253afe2</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:52</sys_created_on>
+        <sys_id>ad8633cd974d411085ae317c1253af4b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</model>
+        <model_id>12707f89974d411085ae317c1253afe2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_12707f89974d411085ae317c1253afe2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:50</sys_created_on>
+        <sys_id>c98633cd974d411085ae317c1253af3e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD29811c51bacd4110f3da605c8589e18e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</model>
+        <model_id>12707f89974d411085ae317c1253afe2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_12707f89974d411085ae317c1253afe2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:51</sys_created_on>
+        <sys_id>dd8633cd974d411085ae317c1253af45</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=12707f89974d411085ae317c1253afe2^sys_idNOT IN028633cd974d411085ae317c1253af90,0e8633cd974d411085ae317c1253af98,203d489d978d411085ae317c1253af04,7d8633cd974d411085ae317c1253af5f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</flow>
+        <order>5</order>
+        <parent_ui_id>4d1074eb-fc43-4ac5-b86f-74eaaca28453</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>028633cd974d411085ae317c1253af90</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:17:25</sys_updated_on>
+        <ui_id>489ee559-93d1-40bc-bcc8-2d63f8684021</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=028633cd974d411085ae317c1253af90"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>028633cd974d411085ae317c1253af90</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>c68633cd974d411085ae317c1253af91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <value>x_snc_wind_turbine_wind_turbine_incident</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=028633cd974d411085ae317c1253af90"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>028633cd974d411085ae317c1253af90</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>828633cd974d411085ae317c1253af91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>028633cd974d411085ae317c1253af90</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>468633cd974d411085ae317c1253af91</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>priority=3^active=true^cmdb_ci={{Created or Updated_1.current.sensorid}}^short_description=fd-scripted^type=1</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=028633cd974d411085ae317c1253af90^sys_idNOT IN8e8633cd974d411085ae317c1253af90"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>028633cd974d411085ae317c1253af90</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"short_description":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar shortDesc \u003d \"Fuel level in Gear box \" + fd_data.trigger.current.sensorid.name + \" is low : \" + fd_data.trigger.current.fluid_level;\nreturn shortDesc;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>8e8633cd974d411085ae317c1253af90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</flow>
+        <order>7</order>
+        <parent_ui_id>dac3ecda-ce23-4bfa-aaf2-e757bfecec08</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>0e8633cd974d411085ae317c1253af98</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:17:25</sys_updated_on>
+        <ui_id>9eaff27c-eea5-4ac1-89b3-944ab3c11e4f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0e8633cd974d411085ae317c1253af98"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0e8633cd974d411085ae317c1253af98</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>c28633cd974d411085ae317c1253af9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <value>x_snc_wind_turbine_wind_turbine_incident</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0e8633cd974d411085ae317c1253af98"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0e8633cd974d411085ae317c1253af98</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>8e8633cd974d411085ae317c1253af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0e8633cd974d411085ae317c1253af98</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>428633cd974d411085ae317c1253af9a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:30:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>priority=1^active=true^short_description=fd-scripted^cmdb_ci={{Created or Updated_1.current.sensorid}}^type=1</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0e8633cd974d411085ae317c1253af98^sys_idNOT IN8a8633cd974d411085ae317c1253af99"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>0e8633cd974d411085ae317c1253af98</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"short_description":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar shortDesc \u003d \"Fuel level in Gear box \" + fd_data.trigger.current.sensorid.name + \" is very low : \" + fd_data.trigger.current.fluid_level;\nreturn shortDesc;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>8a8633cd974d411085ae317c1253af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:55:55</sys_created_on>
+        <sys_id>203d489d978d411085ae317c1253af04</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:17:25</sys_updated_on>
+        <ui_id>860b60a1-957d-49fd-8ff3-a259e463fd6e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=203d489d978d411085ae317c1253af04"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>203d489d978d411085ae317c1253af04</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:55:56</sys_created_on>
+        <sys_id>e43d489d978d411085ae317c1253af1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:55:56</sys_updated_on>
+        <value>x_snc_wind_turbine_wind_turbine_incident</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=203d489d978d411085ae317c1253af04"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>203d489d978d411085ae317c1253af04</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:55:56</sys_created_on>
+        <sys_id>ac3d489d978d411085ae317c1253af1e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:08:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>active=true^cmdb_ci={{Created or Updated_1.current.sensorid}}^type=1</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>203d489d978d411085ae317c1253af04</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:55:56</sys_created_on>
+        <sys_id>643d489d978d411085ae317c1253af1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:55:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</flow>
+        <order>3</order>
+        <parent_ui_id>4433420c-7866-4ed0-9b65-d1465b997c68</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:53</sys_created_on>
+        <sys_id>7d8633cd974d411085ae317c1253af5f</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:17:25</sys_updated_on>
+        <ui_id>837063d0-11a0-4d43-b273-fe2676786aa7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7d8633cd974d411085ae317c1253af5f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7d8633cd974d411085ae317c1253af5f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>ca8633cd974d411085ae317c1253af62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <value>x_snc_wind_turbine_wind_turbine_incident</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7d8633cd974d411085ae317c1253af5f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7d8633cd974d411085ae317c1253af5f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>868633cd974d411085ae317c1253af62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7d8633cd974d411085ae317c1253af5f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>4a8633cd974d411085ae317c1253af62</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:29:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>priority=4^short_description=fd-scripted^cmdb_ci={{Created or Updated_1.current.sensorid}}^type=1</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7d8633cd974d411085ae317c1253af5f^sys_idNOT INb58633cd974d411085ae317c1253af61"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>7d8633cd974d411085ae317c1253af5f</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"short_description":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar shortDesc \u003d \"Low fuel level in gear box : \"+fd_data.trigger.current.sensorid.name;\nreturn shortDesc;","savedValue":"Fuel Level is low in Gear Box"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:53</sys_created_on>
+        <sys_id>b58633cd974d411085ae317c1253af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:53</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=12707f89974d411085ae317c1253afe2^sys_idNOT IN0a8633cd974d411085ae317c1253af63,828633cd974d411085ae317c1253af92,b18633cd974d411085ae317c1253af57"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">428633cd974d411085ae317c1253af63</block>
+        <comment/>
+        <connected_to>4433420c-7866-4ed0-9b65-d1465b997c68</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>0a8633cd974d411085ae317c1253af63</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:06</sys_updated_on>
+        <ui_id>4d1074eb-fc43-4ac5-b86f-74eaaca28453</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0a8633cd974d411085ae317c1253af63"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0a8633cd974d411085ae317c1253af63</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>4e8633cd974d411085ae317c1253af66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <value>Moderate Incident</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_12707f89974d411085ae317c1253afe2^id=0a8633cd974d411085ae317c1253af63"/>
+    <sys_element_mapping action="delete_multiple" query="id=0a8633cd974d411085ae317c1253af63"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>0a8633cd974d411085ae317c1253af63</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>ca8633cd974d411085ae317c1253af66</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:55:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.fluid_level}}&lt;3^{{Created or Updated_1.current.fluid_level}}&gt;2^{{860b60a1-957d-49fd-8ff3-a259e463fd6e.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>0a8633cd974d411085ae317c1253af63</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>0a8633cd974d411085ae317c1253af66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ca8633cd974d411085ae317c1253af91</block>
+        <comment/>
+        <connected_to>4433420c-7866-4ed0-9b65-d1465b997c68</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>828633cd974d411085ae317c1253af92</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:06</sys_updated_on>
+        <ui_id>dac3ecda-ce23-4bfa-aaf2-e757bfecec08</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=828633cd974d411085ae317c1253af92"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>828633cd974d411085ae317c1253af92</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>028633cd974d411085ae317c1253af95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <value>Critical Incident</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_12707f89974d411085ae317c1253afe2^id=828633cd974d411085ae317c1253af92"/>
+    <sys_element_mapping action="delete_multiple" query="id=828633cd974d411085ae317c1253af92"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>828633cd974d411085ae317c1253af92</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>8e8633cd974d411085ae317c1253af94</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:55:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.fluid_level}}&lt;=2^{{860b60a1-957d-49fd-8ff3-a259e463fd6e.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>828633cd974d411085ae317c1253af92</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:54</sys_created_on>
+        <sys_id>ca8633cd974d411085ae317c1253af94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:54</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">758633cd974d411085ae317c1253af56</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:53</sys_created_on>
+        <sys_id>b18633cd974d411085ae317c1253af57</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:05</sys_updated_on>
+        <ui_id>4433420c-7866-4ed0-9b65-d1465b997c68</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b18633cd974d411085ae317c1253af57"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b18633cd974d411085ae317c1253af57</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:53</sys_created_on>
+        <sys_id>3d8633cd974d411085ae317c1253af5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:53</sys_updated_on>
+        <value>Normal Incident</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_12707f89974d411085ae317c1253afe2^id=b18633cd974d411085ae317c1253af57"/>
+    <sys_element_mapping action="delete_multiple" query="id=b18633cd974d411085ae317c1253af57"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>b18633cd974d411085ae317c1253af57</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:53</sys_created_on>
+        <sys_id>b98633cd974d411085ae317c1253af5b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:55:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.fluid_level}}&lt;3.5^{{Created or Updated_1.current.fluid_level}}&gt;=3^{{860b60a1-957d-49fd-8ff3-a259e463fd6e.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>b18633cd974d411085ae317c1253af57</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:53</sys_created_on>
+        <sys_id>718633cd974d411085ae317c1253af5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:53</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_variable action="delete_multiple" query="model=12707f89974d411085ae317c1253afe2^sys_idNOT INc03d089d978d411085ae317c1253afea"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiTypeLabel=_</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>_</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type/>
+        <label>_</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</model>
+        <model_id>12707f89974d411085ae317c1253afe2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_12707f89974d411085ae317c1253afe2</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:55:53</sys_created_on>
+        <sys_id>c03d089d978d411085ae317c1253afea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>_</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_c03d089d978d411085ae317c1253afea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_12707f89974d411085ae317c1253afe2^sys_idNOT IN198633cd974d411085ae317c1253af44,618633cd974d411085ae317c1253af50,e58633cd974d411085ae317c1253af4a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_12707f89974d411085ae317c1253afe2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:51</sys_created_on>
+        <sys_id>198633cd974d411085ae317c1253af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_12707f89974d411085ae317c1253afe2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:52</sys_created_on>
+        <sys_id>618633cd974d411085ae317c1253af50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_12707f89974d411085ae317c1253afe2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:16:51</sys_created_on>
+        <sys_id>e58633cd974d411085ae317c1253af4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:16:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=12707f89974d411085ae317c1253afe2^sys_idNOT IN1db6f3cd974d411085ae317c1253afd1"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"1db6f3cd974d411085ae317c1253afd1","name":"plan","plan_signature":null}}</plan>
+        <plan_id>12707f89974d411085ae317c1253afe2</plan_id>
+        <snapshot>8f12149197cd411085ae317c1253aff5</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1db6f3cd974d411085ae317c1253afd1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:00</sys_updated_on>
+        <trigger display_value="">b3815c5197cd411085ae317c1253af63</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Creating  Incidents based on the Fluid Sensor data</description>
+        <internal_name>fluid_sensor</internal_name>
+        <label_cache>[{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.Table","label":"1➛Wind Turbine Incident Table","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"860b60a1-957d-49fd-8ff3-a259e463fd6e.Records","label":"1➛Wind Turbine Incident Records","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.Count","label":"7➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.Table","label":"7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5345f3e2-00fc-4079-8027-30bfa5ee83ea.Records","label":"7➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"02f25288-da40-4132-a5c3-a67f89af0c80.table_name","label":"7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{}},{"name":"02f25288-da40-4132-a5c3-a67f89af0c80.answer","label":"7➛Answer","reference_display":"Answer","type":"document_id","base_type":"document_id","attributes":{}},{"name":"0de31847-ff00-4580-b008-34a4b5a16b70.context","label":"7➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"9eaff27c-eea5-4ac1-89b3-944ab3c11e4f.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9eaff27c-eea5-4ac1-89b3-944ab3c11e4f.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9eaff27c-eea5-4ac1-89b3-944ab3c11e4f.table_name","label":"7➛Wind Turbine Incident Table","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9eaff27c-eea5-4ac1-89b3-944ab3c11e4f.record","label":"7➛Wind Turbine Incident Record","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"489ee559-93d1-40bc-bcc8-2d63f8684021.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"489ee559-93d1-40bc-bcc8-2d63f8684021.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"489ee559-93d1-40bc-bcc8-2d63f8684021.table_name","label":"5➛Wind Turbine Incident Table","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"489ee559-93d1-40bc-bcc8-2d63f8684021.record","label":"5➛Wind Turbine Incident Record","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sensorid","label":"Trigger➛Fluid Sensor Data Record➛SensorId","reference":"x_snc_wind_turbine_cmdb_ci_field_device","reference_display":"Field Device","type":"reference","base_type":"reference","parent_table_name":"x_snc_wind_turbine_fluid_level_data","column_name":"sensorid"},{"name":"837063d0-11a0-4d43-b273-fe2676786aa7.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"837063d0-11a0-4d43-b273-fe2676786aa7.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"837063d0-11a0-4d43-b273-fe2676786aa7.table_name","label":"3➛Wind Turbine Incident Table","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"837063d0-11a0-4d43-b273-fe2676786aa7.record","label":"3➛Wind Turbine Incident Record","reference":"x_snc_wind_turbine_wind_turbine_incident","reference_display":"Wind Turbine Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.fluid_level","label":"Trigger➛Fluid Sensor Data Record➛Fluid Level","reference":"","reference_display":"Fluid Level","type":"decimal","base_type":"decimal","parent_table_name":"x_snc_wind_turbine_fluid_level_data","column_name":"fluid_level"}]</label_cache>
+        <master>true</master>
+        <name>Fluid Sensor</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Fluid Sensor">12707f89974d411085ae317c1253afe2</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6a6f3cd974d411085ae317c1253af17</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:55</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f6a6f3cd974d411085ae317c1253af17"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f6a6f3cd974d411085ae317c1253af17"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f6a6f3cd974d411085ae317c1253af17^sys_idNOT INf8b6f3cd974d411085ae317c1253afa1"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>f8b6f3cd974d411085ae317c1253afa1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:15:00</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f8b6f3cd974d411085ae317c1253afa1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f8b6f3cd974d411085ae317c1253afa1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>74b6f3cd974d411085ae317c1253afa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:38</sys_updated_on>
+        <value>x_snc_wind_turbine_fluid_level_data</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f8b6f3cd974d411085ae317c1253afa1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>b0b6f3cd974d411085ae317c1253afa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:38</sys_updated_on>
+        <value>fluid_level&lt;3.5</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=f8b6f3cd974d411085ae317c1253afa1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f6a6f3cd974d411085ae317c1253af17^sys_idNOT INbaa6f3cd974d411085ae317c1253af18"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f6a6f3cd974d411085ae317c1253af17</id>
+        <name>Fluid Sensor</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:30</sys_created_on>
+        <sys_id>baa6f3cd974d411085ae317c1253af18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=f6a6f3cd974d411085ae317c1253af17^sys_idNOT INaba6f3cd974d411085ae317c1253af52,f3a6f3cd974d411085ae317c1253af5d,fea6f3cd974d411085ae317c1253af1b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD29811c51bacd4110f3da605c8589e18e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</model>
+        <model_id>f6a6f3cd974d411085ae317c1253af17</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f6a6f3cd974d411085ae317c1253af17</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:33</sys_created_on>
+        <sys_id>aba6f3cd974d411085ae317c1253af52</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</model>
+        <model_id>f6a6f3cd974d411085ae317c1253af17</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f6a6f3cd974d411085ae317c1253af17</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:33</sys_created_on>
+        <sys_id>f3a6f3cd974d411085ae317c1253af5d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</model>
+        <model_id>f6a6f3cd974d411085ae317c1253af17</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f6a6f3cd974d411085ae317c1253af17</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:30</sys_created_on>
+        <sys_id>fea6f3cd974d411085ae317c1253af1b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f6a6f3cd974d411085ae317c1253af17^sys_idNOT IN24b6f3cd974d411085ae317c1253af8e,30b6f3cd974d411085ae317c1253afa0,ec5d0c9d978d411085ae317c1253af22,ecb6f3cd974d411085ae317c1253af88"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</flow>
+        <order>5</order>
+        <parent_ui_id>4d1074eb-fc43-4ac5-b86f-74eaaca28453</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:37</sys_created_on>
+        <sys_id>24b6f3cd974d411085ae317c1253af8e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:54</sys_updated_on>
+        <ui_id>489ee559-93d1-40bc-bcc8-2d63f8684021</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=24b6f3cd974d411085ae317c1253af8e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>24b6f3cd974d411085ae317c1253af8e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>f8b6f3cd974d411085ae317c1253af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:38</sys_updated_on>
+        <value>x_snc_wind_turbine_wind_turbine_incident</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=24b6f3cd974d411085ae317c1253af8e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>24b6f3cd974d411085ae317c1253af8e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>a4b6f3cd974d411085ae317c1253af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>24b6f3cd974d411085ae317c1253af8e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>68b6f3cd974d411085ae317c1253af8f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:56:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>priority=3^active=true^cmdb_ci={{Created or Updated_1.current.sensorid}}^short_description=fd-scripted^type=1</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=24b6f3cd974d411085ae317c1253af8e^sys_idNOT INa0b6f3cd974d411085ae317c1253af8f"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>24b6f3cd974d411085ae317c1253af8e</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"short_description":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar shortDesc \u003d \"Fuel level in Gear box \" + fd_data.trigger.current.sensorid.name + \" is low : \" + fd_data.trigger.current.fluid_level;\nreturn shortDesc;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:37</sys_created_on>
+        <sys_id>a0b6f3cd974d411085ae317c1253af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:37</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</flow>
+        <order>7</order>
+        <parent_ui_id>dac3ecda-ce23-4bfa-aaf2-e757bfecec08</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>30b6f3cd974d411085ae317c1253afa0</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:55</sys_updated_on>
+        <ui_id>9eaff27c-eea5-4ac1-89b3-944ab3c11e4f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=30b6f3cd974d411085ae317c1253afa0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>30b6f3cd974d411085ae317c1253afa0</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>f4b6f3cd974d411085ae317c1253afa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:38</sys_updated_on>
+        <value>x_snc_wind_turbine_wind_turbine_incident</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=30b6f3cd974d411085ae317c1253afa0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>30b6f3cd974d411085ae317c1253afa0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>b0b6f3cd974d411085ae317c1253afa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>30b6f3cd974d411085ae317c1253afa0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>74b6f3cd974d411085ae317c1253afa1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:56:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>priority=1^active=true^short_description=fd-scripted^cmdb_ci={{Created or Updated_1.current.sensorid}}^type=1</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=30b6f3cd974d411085ae317c1253afa0^sys_idNOT INbcb6f3cd974d411085ae317c1253afa0"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>30b6f3cd974d411085ae317c1253afa0</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"short_description":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar shortDesc \u003d \"Fuel level in Gear box \" + fd_data.trigger.current.sensorid.name + \" is very low : \" + fd_data.trigger.current.fluid_level;\nreturn shortDesc;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:38</sys_created_on>
+        <sys_id>bcb6f3cd974d411085ae317c1253afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:38</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:56:28</sys_created_on>
+        <sys_id>ec5d0c9d978d411085ae317c1253af22</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:53</sys_updated_on>
+        <ui_id>860b60a1-957d-49fd-8ff3-a259e463fd6e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ec5d0c9d978d411085ae317c1253af22"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ec5d0c9d978d411085ae317c1253af22</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:56:28</sys_created_on>
+        <sys_id>685d0c9d978d411085ae317c1253af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:56:28</sys_updated_on>
+        <value>x_snc_wind_turbine_wind_turbine_incident</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ec5d0c9d978d411085ae317c1253af22"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>ec5d0c9d978d411085ae317c1253af22</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:56:28</sys_created_on>
+        <sys_id>245d0c9d978d411085ae317c1253af24</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>active=true^cmdb_ci={{Created or Updated_1.current.sensorid}}^type=1</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>ec5d0c9d978d411085ae317c1253af22</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:56:28</sys_created_on>
+        <sys_id>e45d0c9d978d411085ae317c1253af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:56:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</flow>
+        <order>3</order>
+        <parent_ui_id>4433420c-7866-4ed0-9b65-d1465b997c68</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:37</sys_created_on>
+        <sys_id>ecb6f3cd974d411085ae317c1253af88</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:54</sys_updated_on>
+        <ui_id>837063d0-11a0-4d43-b273-fe2676786aa7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ecb6f3cd974d411085ae317c1253af88"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ecb6f3cd974d411085ae317c1253af88</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:37</sys_created_on>
+        <sys_id>a4b6f3cd974d411085ae317c1253af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:37</sys_updated_on>
+        <value>x_snc_wind_turbine_wind_turbine_incident</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ecb6f3cd974d411085ae317c1253af88"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ecb6f3cd974d411085ae317c1253af88</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:37</sys_created_on>
+        <sys_id>60b6f3cd974d411085ae317c1253af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ecb6f3cd974d411085ae317c1253af88</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:37</sys_created_on>
+        <sys_id>24b6f3cd974d411085ae317c1253af8a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:56:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>priority=4^short_description=fd-scripted^cmdb_ci={{Created or Updated_1.current.sensorid}}^type=1</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ecb6f3cd974d411085ae317c1253af88^sys_idNOT IN6cb6f3cd974d411085ae317c1253af89"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>ecb6f3cd974d411085ae317c1253af88</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"short_description":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar shortDesc \u003d \"Low fuel level in gear box : \"+fd_data.trigger.current.sensorid.name;\nreturn shortDesc;","savedValue":"Fuel Level is low in Gear Box"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:37</sys_created_on>
+        <sys_id>6cb6f3cd974d411085ae317c1253af89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:37</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f6a6f3cd974d411085ae317c1253af17^sys_idNOT IN00b6f3cd974d411085ae317c1253af6b,10b6f3cd974d411085ae317c1253af80,ccb6f3cd974d411085ae317c1253af7b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">758633cd974d411085ae317c1253af56</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:35</sys_created_on>
+        <sys_id>00b6f3cd974d411085ae317c1253af6b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:54</sys_updated_on>
+        <ui_id>4433420c-7866-4ed0-9b65-d1465b997c68</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=00b6f3cd974d411085ae317c1253af6b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>00b6f3cd974d411085ae317c1253af6b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:35</sys_created_on>
+        <sys_id>c0b6f3cd974d411085ae317c1253af7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:35</sys_updated_on>
+        <value>Normal Incident</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_f6a6f3cd974d411085ae317c1253af17^id=00b6f3cd974d411085ae317c1253af6b"/>
+    <sys_element_mapping action="delete_multiple" query="id=00b6f3cd974d411085ae317c1253af6b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>00b6f3cd974d411085ae317c1253af6b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:35</sys_created_on>
+        <sys_id>40b6f3cd974d411085ae317c1253af7b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:56:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.fluid_level}}&lt;3.5^{{Created or Updated_1.current.fluid_level}}&gt;=3^{{860b60a1-957d-49fd-8ff3-a259e463fd6e.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>00b6f3cd974d411085ae317c1253af6b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:35</sys_created_on>
+        <sys_id>8cb6f3cd974d411085ae317c1253af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ca8633cd974d411085ae317c1253af91</block>
+        <comment/>
+        <connected_to>4433420c-7866-4ed0-9b65-d1465b997c68</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:35</sys_created_on>
+        <sys_id>10b6f3cd974d411085ae317c1253af80</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:55</sys_updated_on>
+        <ui_id>dac3ecda-ce23-4bfa-aaf2-e757bfecec08</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=10b6f3cd974d411085ae317c1253af80"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>10b6f3cd974d411085ae317c1253af80</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:36</sys_created_on>
+        <sys_id>9cb6f3cd974d411085ae317c1253af82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:36</sys_updated_on>
+        <value>Critical Incident</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_f6a6f3cd974d411085ae317c1253af17^id=10b6f3cd974d411085ae317c1253af80"/>
+    <sys_element_mapping action="delete_multiple" query="id=10b6f3cd974d411085ae317c1253af80"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>10b6f3cd974d411085ae317c1253af80</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:36</sys_created_on>
+        <sys_id>1cb6f3cd974d411085ae317c1253af82</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:56:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.fluid_level}}&lt;=2^{{860b60a1-957d-49fd-8ff3-a259e463fd6e.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>10b6f3cd974d411085ae317c1253af80</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:36</sys_created_on>
+        <sys_id>58b6f3cd974d411085ae317c1253af82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">428633cd974d411085ae317c1253af63</block>
+        <comment/>
+        <connected_to>4433420c-7866-4ed0-9b65-d1465b997c68</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:35</sys_created_on>
+        <sys_id>ccb6f3cd974d411085ae317c1253af7b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:54</sys_updated_on>
+        <ui_id>4d1074eb-fc43-4ac5-b86f-74eaaca28453</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ccb6f3cd974d411085ae317c1253af7b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ccb6f3cd974d411085ae317c1253af7b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:35</sys_created_on>
+        <sys_id>04b6f3cd974d411085ae317c1253af7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:35</sys_updated_on>
+        <value>Moderate Incident</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_f6a6f3cd974d411085ae317c1253af17^id=ccb6f3cd974d411085ae317c1253af7b"/>
+    <sys_element_mapping action="delete_multiple" query="id=ccb6f3cd974d411085ae317c1253af7b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>ccb6f3cd974d411085ae317c1253af7b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:35</sys_created_on>
+        <sys_id>80b6f3cd974d411085ae317c1253af7f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 10:56:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.fluid_level}}&lt;3^{{Created or Updated_1.current.fluid_level}}&gt;2^{{860b60a1-957d-49fd-8ff3-a259e463fd6e.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>ccb6f3cd974d411085ae317c1253af7b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:35</sys_created_on>
+        <sys_id>ccb6f3cd974d411085ae317c1253af7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f6a6f3cd974d411085ae317c1253af17^sys_idNOT IN185dc89d978d411085ae317c1253afe9"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiTypeLabel=_</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>_</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type/>
+        <label>_</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Fluid Sensor">f6a6f3cd974d411085ae317c1253af17</model>
+        <model_id>f6a6f3cd974d411085ae317c1253af17</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_f6a6f3cd974d411085ae317c1253af17</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 10:56:27</sys_created_on>
+        <sys_id>185dc89d978d411085ae317c1253afe9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>_</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_185dc89d978d411085ae317c1253afe9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 11:14:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f6a6f3cd974d411085ae317c1253af17^sys_idNOT IN6ba6f3cd974d411085ae317c1253af4e,a3a6f3cd974d411085ae317c1253af59,f7a6f3cd974d411085ae317c1253af63"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f6a6f3cd974d411085ae317c1253af17</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:33</sys_created_on>
+        <sys_id>6ba6f3cd974d411085ae317c1253af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f6a6f3cd974d411085ae317c1253af17</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:33</sys_created_on>
+        <sys_id>a3a6f3cd974d411085ae317c1253af59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f6a6f3cd974d411085ae317c1253af17</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-13 09:17:34</sys_created_on>
+        <sys_id>f7a6f3cd974d411085ae317c1253af63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-13 09:17:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>12707f89974d411085ae317c1253afe2</sys_id>
+        <latest_snapshot>f6a6f3cd974d411085ae317c1253af17</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

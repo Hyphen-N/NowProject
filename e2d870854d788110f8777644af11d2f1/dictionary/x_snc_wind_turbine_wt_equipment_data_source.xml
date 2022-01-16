@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Wind Turbine Data Source" max_length="40" name="x_snc_wind_turbine_wt_equipment_data_source" sizeclass="12" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Code" label="GB Code" max_length="40" name="u_gb_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Manufacture" label="GB Manufacture" max_length="40" name="u_gb_manufacture" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Model" label="GB Model" max_length="40" name="u_gb_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Name" label="GB Name" max_length="40" name="u_gb_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Senor Accuracy" label="GB Senor Accuracy" max_length="40" name="u_gb_senor_accuracy" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Sensor Name" label="GB Sensor Name" max_length="40" name="u_gb_sensor_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Sensor Range" label="GB Sensor Range" max_length="40" name="u_gb_sensor_range" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Sensor Serial Number" label="GB Sensor Serial Number" max_length="40" name="u_gb_sensor_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Sensor Typical Apps" label="GB Sensor Typical Apps" max_length="40" name="u_gb_sensor_typical_apps" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Serial Number" label="GB Serial Number" max_length="40" name="u_gb_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GB Warranty  Expiration" label="GB Warranty  Expiration" max_length="40" name="u_gb_warranty__expiration" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Code" label="Gen Code" max_length="40" name="u_gen_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Manufacture" label="Gen Manufacture" max_length="40" name="u_gen_manufacture" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Model" label="Gen Model" max_length="40" name="u_gen_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Name" label="Gen Name" max_length="40" name="u_gen_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Senor Accuracy" label="Gen Senor Accuracy" max_length="40" name="u_gen_senor_accuracy" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Sensor Name" label="Gen Sensor Name" max_length="40" name="u_gen_sensor_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Sensor Range" label="Gen Sensor Range" max_length="40" name="u_gen_sensor_range" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Sensor Serial Number" label="Gen Sensor Serial Number" max_length="40" name="u_gen_sensor_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Sensor Typical Apps" label="Gen Sensor Typical Apps" max_length="40" name="u_gen_sensor_typical_apps" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Serial Number" label="Gen Serial Number" max_length="40" name="u_gen_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gen Warranty  Expiration" label="Gen Warranty  Expiration" max_length="40" name="u_gen_warranty__expiration" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ï»¿Substation Serial Number" label="ï»¿Substation Serial Number" max_length="40" name="u_ï__substation_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Code" label="LSS Code" max_length="40" name="u_lss_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Manufacture" label="LSS Manufacture" max_length="40" name="u_lss_manufacture" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Model" label="LSS Model" max_length="40" name="u_lss_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Name" label="LSS Name" max_length="40" name="u_lss_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Senor Accuracy" label="LSS Senor Accuracy" max_length="40" name="u_lss_senor_accuracy" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Sensor Name" label="LSS Sensor Name" max_length="40" name="u_lss_sensor_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Sensor Range" label="LSS Sensor Range" max_length="40" name="u_lss_sensor_range" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Sensor Serial Number" label="LSS Sensor Serial Number" max_length="40" name="u_lss_sensor_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Sensor Typical Apps" label="LSS Sensor Typical Apps" max_length="40" name="u_lss_sensor_typical_apps" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Serial Number" label="LSS Serial Number" max_length="40" name="u_lss_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LSS Warranty  Expiration" label="LSS Warranty  Expiration" max_length="40" name="u_lss_warranty__expiration" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Substation Code" label="Substation Code" max_length="40" name="u_substation_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Substation Location" label="Substation Location" max_length="40" name="u_substation_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Substation Name" label="Substation Name" max_length="40" name="u_substation_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Substation Serial Number" label="Substation Serial Number" max_length="40" name="u_substation_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=WT Code" label="WT Code" max_length="40" name="u_wt_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=WT Location" label="WT Location" max_length="40" name="u_wt_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=WT Manufacture" label="WT Manufacture" max_length="40" name="u_wt_manufacture" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=WT Model" label="WT Model" max_length="40" name="u_wt_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=WT Name" label="WT Name" max_length="40" name="u_wt_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=WT Serial Number" label="WT Serial Number" max_length="40" name="u_wt_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=WT Warranty  Expiration" label="WT Warranty  Expiration" max_length="40" name="u_wt_warranty__expiration" type="string"/>
+    </element>
+</database>

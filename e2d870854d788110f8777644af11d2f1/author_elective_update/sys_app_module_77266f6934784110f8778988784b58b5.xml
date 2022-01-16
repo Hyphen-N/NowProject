@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Gearbox">bf266f6934784110f8778988784b58b2</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Gearboxes</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_wind_turbine_gearbox</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_snc_wind_turbine.gearbox_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 11:06:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77266f6934784110f8778988784b58b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gearboxes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_app_module_77266f6934784110f8778988784b58b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 11:06:44</sys_updated_on>
+        <timeline_page/>
+        <title>Gearboxes</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>5c080d8c7c300110157b5f16afb912bc</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_app_module_77266f6934784110f8778988784b58b5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Gearbox">bf266f6934784110f8778988784b58b2</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Gearboxes</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_snc_wind_turbine_gearbox</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_snc_wind_turbine.gearbox_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-02 11:06:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>77266f6934784110f8778988784b58b5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Gearboxes</sys_name><sys_overrides/><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_app_module_77266f6934784110f8778988784b58b5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-02 11:06:44</sys_updated_on><timeline_page/><title>Gearboxes</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-23139100</payload_hash>
+        <record_name>Gearboxes</record_name>
+        <reverted_from/>
+        <source>0b99b4854d788110f8777644af11d2aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 11:06:44</sys_created_on>
+        <sys_id>b7266f6934784110f8778988784b58b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e1a7863dc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 11:06:44</sys_updated_on>
+        <type>Module</type>
+        <update_guid>ff266f69a8784110dba35f1a96fa55b6</update_guid>
+        <update_guid_history>ff266f69a8784110dba35f1a96fa55b6:-23139100</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Gearboxes">502c0c35347c4110f8778988784b58c2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 13:52:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>91217f4d3178416d9455728870d21309</sys_id>
+        <sys_metadata>77266f6934784110f8778988784b58b5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gearboxes</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_app_module_77266f6934784110f8778988784b58b5</sys_update_name>
+        <sys_update_version display_value="sys_app_module_77266f6934784110f8778988784b58b5">b7266f6934784110f8778988784b58b7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 13:52:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

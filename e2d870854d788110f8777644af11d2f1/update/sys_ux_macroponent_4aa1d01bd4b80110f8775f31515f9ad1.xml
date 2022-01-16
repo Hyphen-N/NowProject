@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "record_tabs_1",
+  "elementLabel" : "Record Tabs 1",
+  "propertyValues" : {
+    "tabRoutes" : {
+      "type" : "JSON_LITERAL",
+      "value" : [ {
+        "route" : "details",
+        "label" : "Details",
+        "fields" : {
+          "details" : true
+        }
+      } ]
+    },
+    "detailsProps" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "selectedTabIndex" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "isInitialPageLoad" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "relatedListRefreshRequests" : {
+      "type" : "JSON_LITERAL",
+      "value" : { }
+    },
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "sysId" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "userSession" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "formMessages" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "query" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "views" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "extraParams" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "a04c00820f901010a326b6ade7767ef9",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "9664d48053461010cbc2ddeeff7b128e",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "wind_turbine_incident",
+  "elementLabel" : "WindTurbineIncident",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_snc_wind_turbine_wind_turbine_incident"
+    },
+    "recordId" : {
+      "type" : "JSON_LITERAL",
+      "value" : "55cdc483d4300110f8775f31515f9ada"
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "short_description,state,assigned_to,sys_id"
+    },
+    "returnTableMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "b997a84053021010cbc2ddeeff7b1228",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "wind_turbine_incidents",
+  "elementLabel" : "WindTurbineIncidents",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_snc_wind_turbine_wind_turbine_incident"
+    },
+    "encodedQuery" : {
+      "type" : "CLIENT_TRANSFORM",
+      "transform" : {
+        "operands" : {
+          "type" : "LIST_CONTAINER",
+          "container" : [ {
+            "type" : "JSON_LITERAL",
+            "value" : "active="
+          }, {
+            "type" : "JSON_LITERAL",
+            "value" : "true"
+          }, {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          } ]
+        },
+        "operator" : "CONCAT"
+      }
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "number,short_description,state"
+    },
+    "orderBy" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "sortType" : {
+      "type" : "JSON_LITERAL",
+      "value" : "asc"
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1000"
+    },
+    "offset" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "queryCategory" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <dispatched_events/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"400px","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "flex"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>IncidentRecord</name>
+        <props>[ ]</props>
+        <required_translations>[ {
+  "message" : "Details",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 06:07:34</sys_created_on>
+        <sys_id>4aa1d01bd4b80110f8775f31515f9ad1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>IncidentRecord</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ux_macroponent_4aa1d01bd4b80110f8775f31515f9ad1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 06:34:36</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

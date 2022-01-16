@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Substation">e8e71b6d34384110f8778988784b58f3</application>
+        <filter/>
+        <name>Substations</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_wind_turbine.substation_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 10:04:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ece71b6d34384110f8778988784b58f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Substations</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ui_module_ece71b6d34384110f8778988784b58f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 10:04:14</sys_updated_on>
+        <table>x_snc_wind_turbine_substation</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>5c080d8c7c300110157b5f16afb912bc</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_ui_module_ece71b6d34384110f8778988784b58f6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Substation">e8e71b6d34384110f8778988784b58f3</application><filter/><name>Substations</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_snc_wind_turbine.substation_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-02 10:04:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ece71b6d34384110f8778988784b58f6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Substations</sys_name><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_ui_module_ece71b6d34384110f8778988784b58f6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-02 10:04:14</sys_updated_on><table>x_snc_wind_turbine_substation</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-1626711497</payload_hash>
+        <record_name>Substations</record_name>
+        <reverted_from/>
+        <source>0b99b4854d788110f8777644af11d2aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 10:04:15</sys_created_on>
+        <sys_id>a8e71b6d34384110f8778988784b58f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e1a3f2d580000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 10:04:15</sys_updated_on>
+        <type>Module</type>
+        <update_guid>e0e71b6dab3841107ecde5ced1ee08f9</update_guid>
+        <update_guid_history>e0e71b6dab3841107ecde5ced1ee08f9:-1626711497</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 10:28:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>30a08c3a10134149987333fbc4ac0b59</sys_id>
+        <sys_metadata>ece71b6d34384110f8778988784b58f6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Substations</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_ui_module_ece71b6d34384110f8778988784b58f6</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_ece71b6d34384110f8778988784b58f6">a8e71b6d34384110f8778988784b58f9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 10:28:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

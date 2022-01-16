@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_metadata_containment">
+    <cmdb_metadata_containment action="DELETE">
+        <always_include>false</always_include>
+        <ci_type>x_snc_wind_turbine_gearbox</ci_type>
+        <is_reverse>false</is_reverse>
+        <parent_id display_value="x_snc_wind_turbine_wind_turbine">6762a7ce3430c110f8778988784b58a6</parent_id>
+        <rel_type display_value="Depends on::Used by">1a9cb166f1571100a92eb60da2bce5c5</rel_type>
+        <sys_class_name>cmdb_metadata_containment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-04 00:07:18</sys_created_on>
+        <sys_id>a362a7ce3430c110f8778988784b58aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine_gearbox</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>cmdb_metadata_containment_a362a7ce3430c110f8778988784b58aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-04 00:07:18</sys_updated_on>
+    </cmdb_metadata_containment>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>5c080d8c7c300110157b5f16afb912bc</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>cmdb_metadata_containment_a362a7ce3430c110f8778988784b58aa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_metadata_containment"><cmdb_metadata_containment action="INSERT_OR_UPDATE"><always_include>false</always_include><ci_type>x_snc_wind_turbine_gearbox</ci_type><is_reverse>false</is_reverse><parent_id display_value="x_snc_wind_turbine_wind_turbine">6762a7ce3430c110f8778988784b58a6</parent_id><rel_type display_value="Depends on::Used by">1a9cb166f1571100a92eb60da2bce5c5</rel_type><sys_class_name>cmdb_metadata_containment</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-04 00:07:18</sys_created_on><sys_id>a362a7ce3430c110f8778988784b58aa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_wind_turbine_gearbox</sys_name><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>cmdb_metadata_containment_a362a7ce3430c110f8778988784b58aa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-04 00:07:18</sys_updated_on></cmdb_metadata_containment></record_update>]]></payload>
+        <payload_hash>540479159</payload_hash>
+        <record_name>x_snc_wind_turbine_gearbox</record_name>
+        <reverted_from/>
+        <source>2ef2c47d343c4110f8778988784b583d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-04 00:07:18</sys_created_on>
+        <sys_id>23626f023470c110f8778988784b588e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e22695f1d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-04 00:07:18</sys_updated_on>
+        <type>CMDB Metadata Containment Rules</type>
+        <update_guid>6b626f024270c110960eb71fd19a8b8d</update_guid>
+        <update_guid_history>6b626f024270c110960eb71fd19a8b8d:540479159</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_wind_turbine_gearbox">a3d2234e3430c110f8778988784b5886</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-04 00:09:13</sys_created_on>
+        <sys_db_object display_value="" name="cmdb_metadata_containment">cmdb_metadata_containment</sys_db_object>
+        <sys_id>0e78c31452db41938e55f8aa76ef07d1</sys_id>
+        <sys_metadata>a362a7ce3430c110f8778988784b58aa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_wind_turbine_gearbox</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>cmdb_metadata_containment_a362a7ce3430c110f8778988784b58aa</sys_update_name>
+        <sys_update_version display_value="cmdb_metadata_containment_a362a7ce3430c110f8778988784b58aa">23626f023470c110f8778988784b588e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-04 00:09:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

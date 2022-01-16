@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_snc_wind_turbine_wind_turbine_sensor" label="Temperature Sensor" max_length="40" name="x_snc_wind_turbine_temperature_sensor" sizeclass="8" type="collection"/>
+</database>

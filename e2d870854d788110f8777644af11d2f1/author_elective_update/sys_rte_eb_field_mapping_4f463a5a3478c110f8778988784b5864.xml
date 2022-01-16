@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
+    <sys_rte_eb_field_mapping action="DELETE">
+        <order>100</order>
+        <referenced_sys_rte_eb_entity/>
+        <source_sys_rte_eb_field display_value="u_gen_sensor_name">08f093463430c110f8778988784b581a</source_sys_rte_eb_field>
+        <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-04 15:32:57</sys_created_on>
+        <sys_id>4f463a5a3478c110f8778988784b5864</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Wind Turbine Data import">f754a9ce34f88110f8778988784b58e3</sys_rte_eb_definition>
+        <sys_rte_eb_entity_mapping display_value="tempToTemperature Sensor 2">a736765a3478c110f8778988784b58fa</sys_rte_eb_entity_mapping>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_rte_eb_field_mapping_4f463a5a3478c110f8778988784b5864</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-04 15:32:57</sys_updated_on>
+        <target_sys_rte_eb_field display_value="name">c3463a5a3478c110f8778988784b5863</target_sys_rte_eb_field>
+    </sys_rte_eb_field_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>5c080d8c7c300110157b5f16afb912bc</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_rte_eb_field_mapping_4f463a5a3478c110f8778988784b5864</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping"><sys_rte_eb_field_mapping action="INSERT_OR_UPDATE"><order>100</order><referenced_sys_rte_eb_entity/><source_sys_rte_eb_field display_value="u_gen_sensor_name">08f093463430c110f8778988784b581a</source_sys_rte_eb_field><sys_class_name>sys_rte_eb_field_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-04 15:32:57</sys_created_on><sys_id>4f463a5a3478c110f8778988784b5864</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_rte_eb_definition display_value="Wind Turbine Data import">f754a9ce34f88110f8778988784b58e3</sys_rte_eb_definition><sys_rte_eb_entity_mapping display_value="tempToTemperature Sensor 2">a736765a3478c110f8778988784b58fa</sys_rte_eb_entity_mapping><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_rte_eb_field_mapping_4f463a5a3478c110f8778988784b5864</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-04 15:32:57</sys_updated_on><target_sys_rte_eb_field display_value="name">c3463a5a3478c110f8778988784b5863</target_sys_rte_eb_field></sys_rte_eb_field_mapping></record_update>]]></payload>
+        <payload_hash>1083663888</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2ef2c47d343c4110f8778988784b583d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-04 15:32:57</sys_created_on>
+        <sys_id>c3463a5a3478c110f8778988784b5866</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e25b8d6b80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-04 15:32:57</sys_updated_on>
+        <type>RTE Field Mapping</type>
+        <update_guid>0f463a5a5078c110d7ce7e1abd9d9e65</update_guid>
+        <update_guid_history>0f463a5a5078c110d7ce7e1abd9d9e65:1083663888</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-04 15:33:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field_mapping">sys_rte_eb_field_mapping</sys_db_object>
+        <sys_id>1c2021bb380344a288b887b93a4a73d1</sys_id>
+        <sys_metadata>4f463a5a3478c110f8778988784b5864</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_mapping_4f463a5a3478c110f8778988784b5864</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_mapping_4f463a5a3478c110f8778988784b5864">c3463a5a3478c110f8778988784b5866</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-04 15:33:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

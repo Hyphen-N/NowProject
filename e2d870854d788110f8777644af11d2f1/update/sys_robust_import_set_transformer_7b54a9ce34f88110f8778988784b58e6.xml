@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_robust_import_set_transformer">
+    <sys_robust_import_set_transformer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_size>100</batch_size>
+        <description>Importing Data from external sources</description>
+        <name>Wind Turbine Data import</name>
+        <properties/>
+        <robust_transform_engine display_value="Wind Turbine Data import">f754a9ce34f88110f8778988784b58e3</robust_transform_engine>
+        <source_table>x_snc_wind_turbine_wt_equipment_data_source</source_table>
+        <sys_class_name>sys_robust_import_set_transformer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-03 14:56:32</sys_created_on>
+        <sys_id>7b54a9ce34f88110f8778988784b58e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Wind Turbine Data import</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_robust_import_set_transformer_7b54a9ce34f88110f8778988784b58e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-03 14:56:32</sys_updated_on>
+        <verbose>false</verbose>
+    </sys_robust_import_set_transformer>
+</record_update>

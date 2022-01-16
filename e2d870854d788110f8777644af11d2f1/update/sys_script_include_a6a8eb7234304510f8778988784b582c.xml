@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_wind_turbine.WTScriptConstants</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>WTScriptConstants</name>
+        <script><![CDATA[var WTScriptConstants = Class.create();
+WTScriptConstants.prototype = {
+    initialize: function() {
+    },
+    type: 'WTScriptConstants'
+};
+
+WTScriptConstants.MAX_MARKERS = 2000; 
+WTScriptConstants.INCIDENT_TABLE = "x_snc_wind_turbine_wind_turbine_incident";
+WTScriptConstants.WIND_TURBINE_TABLE = "x_snc_wind_turbine_wind_turbine";
+WTScriptConstants.WIND_TURBINE_TYPE = "Wind Turbine";
+WTScriptConstants.WIND_TURBINE_INCID_TYPE = "Wind Turbine Incident";
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>abel.tuter</sys_created_by>
+        <sys_created_on>2022-01-06 08:35:42</sys_created_on>
+        <sys_id>a6a8eb7234304510f8778988784b582c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>WTScriptConstants</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_script_include_a6a8eb7234304510f8778988784b582c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 11:20:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

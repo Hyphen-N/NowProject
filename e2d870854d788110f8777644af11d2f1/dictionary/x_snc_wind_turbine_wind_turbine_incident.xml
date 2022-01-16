@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Wind Turbine Incident" max_length="40" name="x_snc_wind_turbine_wind_turbine_incident" sizeclass="5" type="collection">
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1 - Fuel level" value="1"/>
+                <element inactive_on_update="false" label="2 - Temperature" value="2"/>
+            </choice>
+        </element>
+    </element>
+</database>

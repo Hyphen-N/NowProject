@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list">
+    <sys_ux_list action="DELETE">
+        <active>true</active>
+        <category/>
+        <columns/>
+        <condition/>
+        <configuration display_value="Wind Turbine Workspace_menu_config">07c177fc97c9011085ae317c1253af2d</configuration>
+        <group_by_column/>
+        <groups/>
+        <list_attributes/>
+        <order>50</order>
+        <roles/>
+        <sys_class_name>sys_ux_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-12 14:17:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>57c177fc97c9011085ae317c1253afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ux_list_57c177fc97c9011085ae317c1253afd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-12 14:17:45</sys_updated_on>
+        <table>x_snc_wind_turbine_temperature_sensor_data</table>
+        <title>All</title>
+    </sys_ux_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>85d829f41b854510e84d2f8dee4bcb5c</instance_id>
+        <instance_name>projectnow</instance_name>
+        <name>sys_ux_list_57c177fc97c9011085ae317c1253afd1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list"><sys_ux_list action="INSERT_OR_UPDATE"><active>true</active><category/><columns/><condition/><configuration display_value="Wind Turbine Workspace_menu_config">07c177fc97c9011085ae317c1253af2d</configuration><group_by_column/><groups/><list_attributes/><order>50</order><roles/><sys_class_name>sys_ux_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-12 14:17:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>57c177fc97c9011085ae317c1253afd1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>All</sys_name><sys_overrides/><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_ux_list_57c177fc97c9011085ae317c1253afd1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-12 14:17:45</sys_updated_on><table>x_snc_wind_turbine_temperature_sensor_data</table><title>All</title></sys_ux_list></record_update>]]></payload>
+        <payload_hash>17462142</payload_hash>
+        <record_name>All</record_name>
+        <reverted_from/>
+        <source>df827e3c9785011085ae317c1253af5c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-15 03:52:17</sys_created_on>
+        <sys_id>e26f38fd9705c11085ae317c1253af15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e5bdd4fdf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-15 03:52:17</sys_updated_on>
+        <type>UX List</type>
+        <update_guid>226f38fdcb05c1108f001de5b51cdd15</update_guid>
+        <update_guid_history>226f38fdcb05c1108f001de5b51cdd15:0,9bc177fc05c90110430e659d29bee3d2:1156125352</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-15 03:52:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_list">sys_ux_list</sys_db_object>
+        <sys_id>680cb9c5f7914790b53f4c862edfb900</sys_id>
+        <sys_metadata>57c177fc97c9011085ae317c1253afd1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_ux_list_57c177fc97c9011085ae317c1253afd1</sys_update_name>
+        <sys_update_version display_value="sys_ux_list_57c177fc97c9011085ae317c1253afd1">e26f38fd9705c11085ae317c1253af15</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-15 03:52:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

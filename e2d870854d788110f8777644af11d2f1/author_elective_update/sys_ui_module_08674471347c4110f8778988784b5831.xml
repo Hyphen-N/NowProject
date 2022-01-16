@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <filter/>
+        <name>Fluid Sensors</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_wind_turbine.fluid_sensor_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 13:31:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>08674471347c4110f8778988784b5831</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fluid Sensors</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_update_name>sys_ui_module_08674471347c4110f8778988784b5831</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 13:31:44</sys_updated_on>
+        <table>x_snc_wind_turbine_fluid_sensor</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</application>
+        <file_path/>
+        <instance_id>5c080d8c7c300110157b5f16afb912bc</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_ui_module_08674471347c4110f8778988784b5831</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application/><filter/><name>Fluid Sensors</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_snc_wind_turbine.fluid_sensor_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-02 13:31:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>08674471347c4110f8778988784b5831</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Fluid Sensors</sys_name><sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package><sys_policy/><sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope><sys_update_name>sys_ui_module_08674471347c4110f8778988784b5831</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-02 13:31:44</sys_updated_on><table>x_snc_wind_turbine_fluid_sensor</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-317776710</payload_hash>
+        <record_name>Fluid Sensors</record_name>
+        <reverted_from/>
+        <source>2ef2c47d343c4110f8778988784b583d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 13:58:10</sys_created_on>
+        <sys_id>576d0875347c4110f8778988784b583f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e1b1559330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 13:58:10</sys_updated_on>
+        <type>Module</type>
+        <update_guid>c8674471bd7c4110a39d3e5a64987832</update_guid>
+        <update_guid_history>c8674471bd7c4110a39d3e5a64987832:-1991136654,c8674471bd7c4110a39d3e5a64987832:-1991136654</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-02 13:59:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>03dc5edfe4de4be482aa8ae1016fe690</sys_id>
+        <sys_metadata>08674471347c4110f8778988784b5831</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fluid Sensors</sys_name>
+        <sys_package display_value="Wind Turbine Equipment Management" source="x_snc_wind_turbine">e2d870854d788110f8777644af11d2f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Wind Turbine Equipment Management">e2d870854d788110f8777644af11d2f1</sys_scope>
+        <sys_scope_delete display_value="">33d40cc9ae3540bd9fd528c75019e5b1</sys_scope_delete>
+        <sys_update_name>sys_ui_module_08674471347c4110f8778988784b5831</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_08674471347c4110f8778988784b5831">576d0875347c4110f8778988784b583f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-02 13:59:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
